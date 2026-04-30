@@ -84,11 +84,19 @@ img[src$=".jpg"]:not([complete]) {
 }
 
 .wordmark__logo {
-  height: 48px;
+  height: 90px;
   width: auto;
+  max-width: 220px;
   object-fit: contain;
   display: block;
 }
+.wordmark__logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 
 :root {
   --bg:        #F7F5F0;
@@ -231,8 +239,8 @@ p { margin: 0; }
 
 .topbar__sep { opacity: .45; font-size: 9px; }
 .topbar__tag { color: var(--gold); font-weight: 500; }
-.topbar__right a { color: rgba(244,239,223,.85); }
-.topbar__right a:hover { color: var(--gold); }
+.topbar__right a, .topbar__left a { color: rgba(244,239,223,.85); }
+.topbar__right a:hover, .topbar__left a:hover { color: var(--gold); }
 
 /* =========================================================
    MASTHEAD
@@ -1303,7 +1311,7 @@ p { margin: 0; }
 .staff-card--lead .staff-card__name { color: var(--cream); }
 
 .staff-card__avatar {
-  width: 48px; height: 48px;
+  width: 48px; height: 90px;
   border-radius: 50%;
   background: var(--olive);
   color: var(--cream);
