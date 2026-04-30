@@ -3,19 +3,14 @@
   'use strict';
 
   try {
-    var el = document.getElementById('topDate');
-    if (el) {
-      var now = new Date();
-      var days = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
-      var months = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
-      var dayName = days[now.getDay()];
-      var date = now.getDate();
-      var monthName = months[now.getMonth()];
-      var year = now.getFullYear();
-      el.textContent = dayName + '، ' + date + ' ' + monthName + ' ' + year;
-    }
-    }
-  } catch(e){}
+        var el = document.getElementById('topDate');
+        if (el) {
+                var now = new Date();
+                var days = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
+                var months = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
+                el.textContent = days[now.getDay()] + '، ' + now.getDate() + ' ' + months[now.getMonth()] + ' ' + now.getFullYear();
+        }
+  } catch(e) {}
 
   var toggle=document.getElementById('navToggle');
   var panel=document.getElementById('mobileNav');
