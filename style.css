@@ -1,3 +1,66 @@
+/* ==========================================================
+   Thmanyah Sans - Font Face Declarations
+   ========================================================== */
+
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('assets/fonts/thmanyahsans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('assets/fonts/thmanyahsans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('assets/fonts/thmanyahsans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('assets/fonts/thmanyahsans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('assets/fonts/thmanyahsans-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================
+   Font Application - Apply Thmanyah Sans globally
+   ========================================================== */
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: 'Thmanyah Sans', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.logo,
+.section-title,
+.nav a {
+  font-family: 'Thmanyah Sans', Arial, sans-serif;
+}
+
 /* =========================================================
    صحيفة إرث الإلكترونية — style.css
    ========================================================= */
