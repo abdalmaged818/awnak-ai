@@ -5,13 +5,15 @@
   try {
     var el = document.getElementById('topDate');
     if (el) {
-      var f = new Intl.DateTimeFormat('ar-SA-u-ca-gregory', { weekday:'long',year:'numeric',month:'long',day:'numeric' });
-      var p = f.formatToParts(new Date());
-      var w=p.find(function(x){return x.type==='weekday';})||{};
-      var d=p.find(function(x){return x.type==='day';})||{};
-      var m=p.find(function(x){return x.type==='month';})||{};
-      var y=p.find(function(x){return x.type==='year';})||{};
-      el.textContent=(w.value||'')+' · '+(d.value||'')+' '+(m.value||'')+' '+(y.value||'');
+      var now = new Date();
+      var days = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
+      var months = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
+      var dayName = days[now.getDay()];
+      var date = now.getDate();
+      var monthName = months[now.getMonth()];
+      var year = now.getFullYear();
+      el.textContent = dayName + '، ' + date + ' ' + monthName + ' ' + year;
+    }
     }
   } catch(e){}
 
