@@ -42,28 +42,53 @@
   font-display: swap;
 }
 
-/* ==========================================================
-   Font Application - Apply Thmanyah Sans globally
-   ========================================================== */
-
-body,
-button,
-input,
-textarea,
-select {
-  font-family: 'Thmanyah Sans', Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6,
-.logo,
-.section-title,
-.nav a {
-  font-family: 'Thmanyah Sans', Arial, sans-serif;
-}
-
 /* =========================================================
    صحيفة إرث الإلكترونية — style.css
    ========================================================= */
+
+/* ==========================================================
+   Image System — Ready for real photos
+   ========================================================== */
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-image {
+  height: 220px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  position: relative;
+  background: linear-gradient(135deg, var(--olive) 0%, var(--terra) 100%);
+}
+
+.card-image img,
+.hero__media img,
+.ncard__media img,
+.rcard__media img,
+.icard__media img,
+.acard__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+img[src=""],
+img:not([src]),
+img[src$=".jpg"]:not([complete]) {
+  background: linear-gradient(135deg, #2F3A2E, #8B4A2F);
+}
+
+.wordmark__logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
 
 :root {
   --bg:        #F7F5F0;
@@ -81,7 +106,7 @@ h1, h2, h3, h4, h5, h6,
   --gold:      #C9A86A;
   --cream:     #F4EFDF;
   --serif: 'Amiri', serif;
-  --sans:  'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --sans:  'Thmanyah Sans', Arial, sans-serif;
   --wrap: 1280px;
   --shadow-sm: 0 2px 8px rgba(20,20,20,.05);
   --shadow-md: 0 6px 24px rgba(20,20,20,.08);
@@ -129,9 +154,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 ul, ol { padding: 0; margin: 0; list-style: none; }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: var(--serif);
+  font-family: 'Thmanyah Sans', Arial, sans-serif;
   font-weight: 700;
   color: var(--ink);
   line-height: 1.22;
