@@ -5,67 +5,139 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>صحيفة إرث الإلكترونية · ربط الإنسان بجذوره</title>
 <meta name="description" content="صحيفة إرث الإلكترونية - منصة صحفية ثقافية رقمية تهتم بالتاريخ والآثار والسياحة الثقافية والهوية السعودية" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="./index.html" />
 <meta property="og:title" content="صحيفة إرث الإلكترونية" />
 <meta property="og:description" content="ربط الإنسان بجذوره" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ar_SA" />
+<meta property="og:image" content="assets/images/hero/hero-main.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="صحيفة إرث الإلكترونية" />
+<meta name="twitter:description" content="ربط الإنسان بجذوره" />
+<meta name="twitter:image" content="assets/images/hero/hero-main.jpg" />
+
+<link rel="icon" type="image/svg+xml" href="assets/images/ui/logo-erth.svg" />
+
+<!-- Preload خط ثُمانية الرئيسي (Regular) لتسريع FCP -->
+<link rel="preload" href="assets/fonts/thmanyahsans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<style>
+  /* ============== خط ثُمانية الرسمي ============== */
+  @font-face {
+    font-family: 'Thmanyah Sans';
+    src: url('assets/fonts/thmanyahsans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Thmanyah Sans';
+    src: url('assets/fonts/thmanyahsans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Thmanyah Sans';
+    src: url('assets/fonts/thmanyahsans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Thmanyah Sans';
+    src: url('assets/fonts/thmanyahsans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Thmanyah Sans';
+    src: url('assets/fonts/thmanyahsans-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* تطبيق الخط على كامل الصفحة بأولوية عليا */
+  html, body,
+  h1, h2, h3, h4, h5, h6,
+  p, span, a, li, button, input, textarea, select,
+  .wordmark__name, .hero__title, .rule__title, .ncard__title, .rcard__title,
+  .icard__title, .acard__title, .creative__title, .about-card__title,
+  .staff-card__name, .policy-card__title, .stat-item__num, .stat-item__label,
+  .site-footer__name, .site-footer__motto, .nrow__title, .rside__title,
+  .ncard__excerpt, .rcard__excerpt, .icard__dek, .acard__excerpt,
+  .hero__pick-title, .hero__dek, .creative__lede, .about-card__text,
+  .topbar__tag, .topbar__left, .topbar__right, .badge,
+  .ncard__cat, .nrow__cat, .rcard__cat, .rside__index, .acard__author,
+  .byline__name, .byline__time, .ncard__author, .nrow__author, .rside__author {
+    font-family: 'Thmanyah Sans', 'IBM Plex Sans Arabic', 'Tahoma', Arial, sans-serif !important;
+  }
+</style>
+
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- TOP BAR -->
-  <div class="topbar">
-    <div class="wrap topbar__inner">
-      <div class="topbar__right">
-        <span id="topDate"></span>
-      </div>
-      <div class="topbar__left">
-        <a href="https://x.com/erthdigital0?s=21" aria-label="X" target="_blank" rel="noopener noreferrer">X</a>
-        <span aria-hidden="true">·</span>
-        <a href="https://www.instagram.com/erth_13" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <span aria-hidden="true">·</span>
-        <a href="https://www.tiktok.com/@erth_13" aria-label="TikTok" target="_blank" rel="noopener noreferrer">TikTok</a>
-      </div>
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <div class="topbar__right">
+      <span id="topDate"></span>
+    </div>
+    <div class="topbar__left">
+      <a href="https://x.com/erthdigital0?s=21" aria-label="X" target="_blank" rel="noopener noreferrer"><span lang="en">X</span></a>
+      <span aria-hidden="true">·</span>
+      <a href="https://www.instagram.com/erth_13" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><span lang="en">Instagram</span></a>
+      <span aria-hidden="true">·</span>
+      <a href="https://www.tiktok.com/@erth_13" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><span lang="en">TikTok</span></a>
     </div>
   </div>
-  <!-- MASTHEAD -->
-  <header class="masthead" id="masthead">
-    <div class="wrap masthead__inner">
-      <div class="masthead__start">
-        <button class="nav-toggle" id="navToggle" aria-label="القائمة" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-      <div class="wordmark">
-        <a href="index.html" class="wordmark__logo-link" aria-label="صحيفة إرث الإلكترونية - الرئيسية">
-          <img src="assets/images/ui/logo-erth.svg" alt="شعارصحيفة إرث" class="wordmark__logo" onerror="this.style.display='none'">
-        </a>
-      </div>
-      <div class="masthead__end"></div>
+</div>
+
+<!-- Skip Link -->
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">انتقل إلى المحتوى الرئيسي</a>
+
+<!-- MASTHEAD -->
+<header class="masthead" id="masthead">
+  <div class="wrap masthead__inner">
+    <div class="masthead__start">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="القائمة" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <nav class="primary-nav" aria-label="التنقل الرئيسي">
-      <ul class="primary-nav__list">
-        <li><a href="#" class="active">الرئيسية</a></li>
-        <li><a href="#news">الأخبار</a></li>
-        <li><a href="#reports">التقارير</a></li>
-        <li><a href="#invest">التحقيقات</a></li>
-        <li><a href="#articles">المقالات</a></li>
-        <li><a href="#creative">قصص كُتبت لتبقى</a></li>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="wordmark">
+      <a href="index.html" class="wordmark__logo-link" aria-label="صحيفة إرث الإلكترونية - الرئيسية">
+        <img src="assets/images/ui/logo-erth.svg" alt="شعار صحيفة إرث" class="wordmark__logo" onerror="this.style.display='none'">
+      </a>
+    </div>
+    <div class="masthead__end"></div>
+  </div>
+  <nav class="primary-nav" aria-label="التنقل الرئيسي">
+    <ul class="primary-nav__list">
+      <li><a href="#" class="active">الرئيسية</a></li>
+      <li><a href="#news">الأخبار</a></li>
+      <li><a href="#reports">التقارير</a></li>
+      <li><a href="#invest">التحقيقات</a></li>
+      <li><a href="#articles">المقالات</a></li>
+      <li><a href="#creative">قصص كُتبت لتبقى</a></li>
+      <li><a href="#about">من نحن</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+  </nav>
+</header>
+
 <!-- MOBILE NAV -->
 <aside class="mobile-nav" id="mobileNav" aria-hidden="true">
   <div class="mobile-nav__head">
     <span class="mobile-nav__brand">صحيفة إرث</span>
-    <button class="mobile-nav__close" id="mobileNavClose" aria-label="إغلاق">×</button>
+    <button class="mobile-nav__close" id="mobileNavClose" type="button" aria-label="إغلاق"><span aria-hidden="true">×</span></button>
   </div>
   <ul class="mobile-nav__list">
-    <li><a href="#">الرئيسية</a></li>
+    <li><a href="#" class="active">الرئيسية</a></li>
     <li><a href="#news">الأخبار</a></li>
     <li><a href="#reports">التقارير</a></li>
     <li><a href="#invest">التحقيقات</a></li>
@@ -77,583 +149,596 @@
   <a href="#news" class="btn btn--solid btn--block">تصفّح العدد الأول</a>
 </aside>
 <div class="overlay-backdrop" id="overlayBackdrop"></div>
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="wrap hero__grid">
-    <article class="hero__lead">
-      <div class="hero__media">
-      <img src="assets/images/hero/hero-main.jpg" alt="الدرعية · حيّ الطريف" loading="lazy">
-    </div>
-      <div class="hero__body">
-        <div class="hero__meta">
-          <span class="badge">القصة الرئيسية</span>
-          <span class="hero__cat">افتتاحية · ثقافة وعمران</span>
-        </div>
-        <h2 class="hero__title">
-          إرث<span style="color:var(--terra);">...</span> صحيفة تربط الإنسان
-          <span class="hero__title-em">بجذوره</span>
-        </h2>
-        <p class="hero__dek">نافذة صحفية ثقافية تعيد قراءة التاريخ والآثار والسياحة في المملكة العربية السعودية بأسلوبٍ معاصر يجمع بين العمق المعرفي والسرد البصري.</p>
-        <div class="hero__foot">
-          <div class="byline">
-            <span class="byline__avatar" aria-hidden="true">إ</span>
-            <div class="byline__text">
-              <span class="byline__name">هيئة التحرير</span>
-              <span class="byline__time">قراءة ٥ دقائق · ٣٠ أبريل ٢٠٢٦</span>
-            </div>
-          </div>
-          <a href="articles/editorial.html" class="btn btn--ghost btn--lg">اقرأ الافتتاحية</a>
-        </div>
-      </div>
-    </article>
-    <aside class="hero__side">
-      <div class="hero__side-head">
-        <span class="hero__side-kicker">مُختارات إرث</span>
-        <span class="hero__side-line" aria-hidden="true"></span>
-      </div>
-      <ol class="hero__picks">
-        <li class="hero__pick">
-          <a href="reports/jada-quba.html">
-            <span class="hero__pick-num">٠١</span>
-            <div class="hero__pick-body">
-              <span class="hero__pick-cat">تقرير</span>
-              <h3 class="hero__pick-title">جادة قباء: قصة نجاح سعودية</h3>
-              <span class="hero__pick-author">فراس الجهني</span>
-            </div>
-          </a>
-        </li>
-        <li class="hero__pick">
-          <a href="investigations/tech-heritage.html">
-            <span class="hero__pick-num">٠٢</span>
-            <div class="hero__pick-body">
-              <span class="hero__pick-cat">تحقيق</span>
-              <h3 class="hero__pick-title">هل تُنقذ التكنولوجيا التراث أم تُفقده روحه؟</h3>
-              <span class="hero__pick-author">باسم محمد المغربي</span>
-            </div>
-          </a>
-        </li>
-        <li class="hero__pick">
-          <a href="articles/madain-saleh.html">
-            <span class="hero__pick-num">٠٣</span>
-            <div class="hero__pick-body">
-              <span class="hero__pick-cat">مقال</span>
-              <h3 class="hero__pick-title">مدائن صالح: رحلة عبر الزمن في قلب العلا</h3>
-              <span class="hero__pick-author">أحمد غازي</span>
-            </div>
-          </a>
-        </li>
-      </ol>
-    </aside>
-  </div>
-</section>
-<!-- AXIS STRIP -->
-<section class="axis" aria-label="محاور الصحيفة">
-  <div class="wrap axis__inner">
-    <span class="axis__label">محاور إرث التحريرية</span>
-    <ul class="axis__list">
-      <li><span class="axis__tag"><span class="axis__num">٠١</span>السياحة الثقافية</span></li>
-      <li><span class="axis__tag"><span class="axis__num">٠٢</span>التاريخ والتراث</span></li>
-      <li><span class="axis__tag"><span class="axis__num">٠٣</span>الآثار</span></li>
-      <li><span class="axis__tag"><span class="axis__num">٠٤</span>الهوية السعودية</span></li>
-    </ul>
-  </div>
-</section>
 
-<!-- NEWS SECTION -->
-<section class="section section--news" id="news">
-  <div class="wrap">
-    <header class="rule">
-      <div class="rule__l">
-        <span class="rule__kicker">القسم الأول · يوميّات</span>
-        <h2 class="rule__title">الأخبار</h2>
-      </div>
-      <p class="rule__r">رصد يومي للمشهد الثقافي والسياحي والتراثي في المملكة العربية السعودية، بمعالجة صحفية رشيقة وموثوقة.</p>
-    </header>
-    <div class="news-layout">
-      <article class="ncard ncard--lead">
-        <a href="news/diriyah-clay.html" class="ncard__link">
-          <div class="ncard__media ncard__media--lg" data-label="الدرعية · حيّ الطريف">
-            <img src="assets/images/news/diriyah-clay.jpg" alt="الدرعية · حيّ الطريف" loading="lazy">
-            <span class="ncard__corner">خبر رئيسي</span>
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap hero__grid">
+      <article class="hero__lead">
+        <div class="hero__media">
+          <img src="assets/images/hero/hero-main.jpg" alt="الدرعية · حيّ الطريف" fetchpriority="high" decoding="async">
+        </div>
+        <div class="hero__body">
+          <div class="hero__meta">
+            <span class="badge">القصة الرئيسية</span>
+            <span class="hero__cat">افتتاحية · ثقافة وعمران</span>
           </div>
-          <div class="ncard__body">
-            <span class="ncard__cat">تراث · الدرعية</span>
-            <h3 class="ncard__title">الدرعية تُحيي ذاكرة الطين</h3>
-            <p class="ncard__excerpt">مشهد عمراني يستعيد ملامحه الأصيلة في حيّ الطريف، ويعيد تعريف العلاقة بين الحجر والإنسان في عاصمة الدولة السعودية الأولى.</p>
-            <div class="ncard__foot">
-              <span class="ncard__author">باسم محمد المغربي</span>
-              <span class="ncard__dot" aria-hidden="true"></span>
-              <span class="ncard__time">قراءة ٧ دقائق</span>
-            </div>
-          </div>
-        </a>
-      </article>
-      <article class="ncard ncard--med-1">
-        <a href="news/masar-karam.html" class="ncard__link">
-          <div class="ncard__media" data-label="مسار الكرم">
-            <img src="assets/images/news/masar-karam.jpg" alt="مسار الكرم" loading="lazy">
-          </div>
-          <div class="ncard__body">
-            <span class="ncard__cat">شأن محلي · مشاريع</span>
-            <h3 class="ncard__title">إطلاق مشروع «مسار الكرم» لربط القصور التاريخية بأنسنة المدن</h3>
-            <div class="ncard__foot">
-              <span class="ncard__author">فراس الجهني</span>
-            </div>
-          </div>
-        </a>
-      </article>
-      <div class="ncard-list">
-        <span class="ncard-list__head">المزيد من الأخبار</span>
-        <article class="nrow">
-          <a href="news/jizan-architecture.html" class="nrow__inner">
-            <span class="nrow__num">٠١</span>
-            <div class="nrow__body">
-              <span class="nrow__cat">عمران · جازان</span>
-              <h4 class="nrow__title">أمانة جازان تبدأ دمج «العمارة التقليدية» في مشاريع الأنسنة الحديثة</h4>
-              <span class="nrow__author">فراس الجهني</span>
-            </div>
-          </a>
-        </article>
-        <article class="nrow">
-          <a href="news/bir-urwa.html" class="nrow__inner">
-            <span class="nrow__num">٠٢</span>
-            <div class="nrow__body">
-              <span class="nrow__cat">تراث · المدينة المنورة</span>
-              <h4 class="nrow__title">بئر عروة بن الزبير: «عذوبة التاريخ» تتدفّق من جديد</h4>
-              <span class="nrow__author">عمار المغذوي</span>
-            </div>
-          </a>
-        </article>
-        <article class="nrow">
-          <a href="news/qassim-tourism.html" class="nrow__inner">
-            <span class="nrow__num">٠٣</span>
-            <div class="nrow__body">
-              <span class="nrow__cat">سياحة · القصيم</span>
-              <h4 class="nrow__title">السياحة التاريخية في القصيم… من حفظ الذاكرة إلى صناعة الوجهة</h4>
-              <span class="nrow__author">سلمان عبدالرحمن الطيران</span>
-            </div>
-          </a>
-        </article>
-        <article class="nrow">
-          <a href="news/jeddah-historic.html" class="nrow__inner">
-            <span class="nrow__num">٠٤</span>
-            <div class="nrow__body">
-              <span class="nrow__cat">سياحة · الحجاز</span>
-              <h4 class="nrow__title">جدة التاريخية ٢٠٢٦: قلب الحجاز ينبض بالحياة مجددًا</h4>
-              <span class="nrow__author">أحمد غازي</span>
-            </div>
-          </a>
-        </article>
-        <article class="nrow">
-          <a href="news/uhud-visitors.html" class="nrow__inner">
-            <span class="nrow__num">٠٥</span>
-            <div class="nrow__body">
-              <span class="nrow__cat">سياحة دينية · المدينة المنورة</span>
-              <h4 class="nrow__title">إقبال واسع لزوار المدينة المنورة على وجهة «سيد الشهداء»</h4>
-              <span class="nrow__author">مازن الأحمدي</span>
-            </div>
-          </a>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- REPORTS SECTION -->
-<section class="section section--reports" id="reports">
-  <div class="wrap">
-    <header class="rule">
-      <div class="rule__l">
-        <span class="rule__kicker rule__kicker--olive">القسم الثاني · ملفات</span>
-        <h2 class="rule__title">التقارير</h2>
-      </div>
-      <p class="rule__r">ملفات صحفية متأنّية تتناول الوجهات والمشاريع الثقافية بعمق توثيقي وتحليلي، نقدّمها للقارئ الذي يبحث عن المعنى خلف الخبر.</p>
-    </header>
-    <div class="reports-layout">
-      <article class="rcard--feature">
-        <a href="reports/jada-quba.html" class="rcard__link">
-          <div class="rcard__media" data-label="جادة قباء · المدينة المنورة">
-            <img src="assets/images/reports/jada-quba.jpg" alt="جادة قباء · المدينة المنورة" loading="lazy">
-          </div>
-          <div class="rcard__body">
-            <div class="rcard__head">
-              <span class="rcard__cat">تقرير · ملف خاص</span>
-              <span class="rcard__time">قراءة ١٢ دقيقة</span>
-            </div>
-            <h3 class="rcard__title">جادة قباء: قصة نجاح سعودية</h3>
-            <p class="rcard__excerpt">قراءة تفصيلية في تجربة المدينة المنورة لإعادة تشكيل المشهد العمراني والروحي حول أوّل مسجد في الإسلام، وكيف تحوّل المكان إلى نموذج وطني للتنمية الثقافية.</p>
-            <div class="rcard__foot">
-              <div class="byline">
-                <span class="byline__avatar" style="background:var(--terra);" aria-hidden="true">ف</span>
-                <span class="byline__name">فراس الجهني</span>
+          <h1 class="hero__title">
+            إرث<span style="color:var(--terra);">...</span> صحيفة تربط الإنسان
+            <span class="hero__title-em">بجذوره</span>
+          </h1>
+          <p class="hero__dek">نافذة صحفية ثقافية تعيد قراءة التاريخ والآثار والسياحة في المملكة العربية السعودية بأسلوبٍ معاصر يجمع بين العمق المعرفي والسرد البصري.</p>
+          <div class="hero__foot">
+            <div class="byline">
+              <span class="byline__avatar" aria-hidden="true">إ</span>
+              <div class="byline__text">
+                <span class="byline__name">هيئة التحرير</span>
+                <span class="byline__time">قراءة ٥ دقائق · ٣٠ أبريل ٢٠٢٦</span>
               </div>
-              <span class="rcard__cta">قراءة الملف ←</span>
             </div>
-          </div>
-        </a>
-      </article>
-      <ol class="reports-side">
-        <li class="rside">
-          <a href="reports/qassim-farms.html" class="rside__inner">
-            <span class="rside__index">تقرير · ٠٢</span>
-            <h4 class="rside__title">القصيم: تحوّل المزارع والاسطبلات لوجهات سياحية</h4>
-            <span class="rside__author">سلمان عبدالرحمن الطيران</span>
-          </a>
-        </li>
-        <li class="rside">
-          <a href="reports/makkah-smart.html" class="rside__inner">
-            <span class="rside__index">تقرير · ٠٣</span>
-            <h4 class="rside__title">مكة المكرمة ٢٠٢٦: منظومة ذكية</h4>
-            <span class="rside__author">أحمد غازي</span>
-          </a>
-        </li>
-        <li class="rside">
-          <a href="reports/taibah.html" class="rside__inner">
-            <span class="rside__index">تقرير · ٠٤</span>
-            <h4 class="rside__title">مبادرة طيبة</h4>
-            <span class="rside__author">أحمد غازي</span>
-          </a>
-        </li>
-        <li class="rside">
-          <a href="reports/hijaz-railway.html" class="rside__inner">
-            <span class="rside__index">تقرير · ٠٥</span>
-            <h4 class="rside__title">محطة سكة حديد الحجاز</h4>
-            <span class="rside__author">عاصم العوفي</span>
-          </a>
-        </li>
-        <li class="rside">
-          <a href="reports/uhud-mountain.html" class="rside__inner">
-            <span class="rside__index">تقرير · ٠٦</span>
-            <h4 class="rside__title">جبل أُحد</h4>
-            <span class="rside__author">مازن الأحمدي</span>
-          </a>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
-<!-- INVESTIGATIONS SECTION -->
-<section class="section section--invest" id="invest">
-  <div class="wrap">
-    <header class="rule rule--center">
-      <span class="rule__kicker">القسم الثالث · العمق</span>
-      <h2 class="rule__title rule__title--xl">التحقيقات</h2>
-      <p class="rule__r" style="text-align:center;max-width:600px;margin:14px auto 0;">ملفات استقصائية معمّقة تطرح الأسئلة الكبرى وتفتح نقاشات جوهرية حول التراث والهوية والتحوّلات المعاصرة.</p>
-    </header>
-    <div class="invest-grid">
-      <article class="icard">
-        <div class="icard__rule">
-          <span>تحقيق · ٠١</span>
-          <span class="icard__line"></span>
-          <span class="icard__time">قراءة ١٥ دقيقة</span>
-        </div>
-        <div class="icard__media" data-label="التكنولوجيا · التراث">
-            <img src="assets/images/investigations/tech-heritage.jpg" alt="التكنولوجيا والتراث" loading="lazy">
-          </div>
-        <div class="icard__body">
-          <h3 class="icard__title">هل تُنقذ التكنولوجيا التراث أم تُفقده روحه؟</h3>
-          <p class="icard__dek">سؤالٌ مفتوح يتحرّك بين التوثيق الرقمي والذاكرة الإنسانية، نطرحه على المختصين والممارسين والزوار في رحلة بحثية تمتدّ من المتاحف الافتراضية إلى أزقّة المواقع الأثرية.</p>
-          <div class="icard__foot">
-            <div class="byline">
-              <span class="byline__avatar" aria-hidden="true">ب</span>
-              <span class="byline__name">باسم محمد المغربي</span>
-            </div>
-            <a href="investigations/tech-heritage.html" class="icard__cta">اقرأ التحقيق ←</a>
+            <a href="articles/editorial.html" class="btn btn--ghost btn--lg">اقرأ الافتتاحية</a>
           </div>
         </div>
       </article>
-      <article class="icard">
-        <div class="icard__rule">
-          <span>تحقيق · ٠٢</span>
-          <span class="icard__line"></span>
-          <span class="icard__time">قراءة ١٠ دقائق</span>
+      <aside class="hero__side">
+        <div class="hero__side-head">
+          <span class="hero__side-kicker">مُختارات إرث</span>
+          <span class="hero__side-line" aria-hidden="true"></span>
         </div>
-        <div class="icard__media" data-label="جامع الشيخ · عنيزة">
-            <img src="assets/images/investigations/sheikh-mosque-unaizah.jpg" alt="جامع الشيخ · عنيزة" loading="lazy">
-          </div>
-        <div class="icard__body">
-          <h3 class="icard__title">جامع الشيخ في عنيزة</h3>
-          <p class="icard__dek">قراءة في حكاية معلَم ديني وعمراني يحتل مكانة خاصة في وجدان أهل القصيم، نُفكّك فيها الرواية المتوارثة من خلال الوثائق والشهادات الحيّة.</p>
-          <div class="icard__foot">
-            <div class="byline">
-              <span class="byline__avatar" aria-hidden="true">س</span>
-              <span class="byline__name">سلمان عبدالرحمن الطيران</span>
-            </div>
-            <a href="investigations/sheikh-mosque-unaizah.html" class="icard__cta">اقرأ التحقيق ←</a>
-          </div>
-        </div>
-      </article>
+        <ol class="hero__picks">
+          <li class="hero__pick">
+            <a href="reports/jada-quba.html">
+              <span class="hero__pick-num">٠١</span>
+              <div class="hero__pick-body">
+                <span class="hero__pick-cat">تقرير</span>
+                <h2 class="hero__pick-title">جادة قباء: قصة نجاح سعودية</h2>
+                <span class="hero__pick-author">فراس الجهني</span>
+              </div>
+            </a>
+          </li>
+          <li class="hero__pick">
+            <a href="investigations/tech-heritage.html">
+              <span class="hero__pick-num">٠٢</span>
+              <div class="hero__pick-body">
+                <span class="hero__pick-cat">تحقيق</span>
+                <h2 class="hero__pick-title">هل تُنقذ التكنولوجيا التراث أم تُفقده روحه؟</h2>
+                <span class="hero__pick-author">باسم محمد المغربي</span>
+              </div>
+            </a>
+          </li>
+          <li class="hero__pick">
+            <a href="articles/madain-saleh.html">
+              <span class="hero__pick-num">٠٣</span>
+              <div class="hero__pick-body">
+                <span class="hero__pick-cat">مقال</span>
+                <h2 class="hero__pick-title">مدائن صالح: رحلة عبر الزمن في قلب العلا</h2>
+                <span class="hero__pick-author">أحمد غازي</span>
+              </div>
+            </a>
+          </li>
+        </ol>
+      </aside>
     </div>
-  </div>
-</section>
-<!-- ARTICLES SECTION -->
-<section class="section section--articles" id="articles">
-  <div class="wrap">
-    <header class="rule">
-      <div class="rule__l">
-        <span class="rule__kicker">القسم الرابع · رأي</span>
-        <h2 class="rule__title">المقالات</h2>
-      </div>
-      <p class="rule__r">أصوات تكتب عن المكان كما تعيشه، وعن التراث كما تشعر به، في مساحات رأي حرّة ومسؤولة.</p>
-    </header>
-    <div class="articles-grid">
-      <article class="acard">
-        <a href="articles/city-not-just-city.html" class="acard__link">
-          <div class="acard__head">
-            <span class="acard__avatar" style="--av:#2F3A2E;" aria-hidden="true">ع</span>
-            <div>
-              <span class="acard__author">عمار محمد المغذوي</span>
-              <span class="acard__role">كاتب رأي</span>
-            </div>
-          </div>
-          <h3 class="acard__title">المدينة.. ليست مجرد مدينة!</h3>
-          <p class="acard__excerpt">تأمّلٌ في معنى المدينة المنورة في الوجدان، وكيف تتجاوز جغرافيتها لتصبح حالة شعورية تستوطن القلب قبل المكان.</p>
-          <span class="acard__cta">اقرأ المقال ←</span>
-        </a>
-      </article>
-      <article class="acard">
-        <a href="articles/dhee-ain-pearl.html" class="acard__link">
-          <div class="acard__head">
-            <span class="acard__avatar" style="--av:#8B4A2F;" aria-hidden="true">ف</span>
-            <div>
-              <span class="acard__author">فراس الجهني</span>
-              <span class="acard__role">كاتب رأي</span>
-            </div>
-          </div>
-          <h3 class="acard__title">«ذي عَين».. لؤلؤة بيضاء في حضن جبال الباحة</h3>
-          <p class="acard__excerpt">قرية حجرية تنام على كتف الجبل، وتروي حكايتها للزائر بصبر الحجارة وألفة المكان الذي لا يُغلق بابه.</p>
-          <span class="acard__cta">اقرأ المقال ←</span>
-        </a>
-      </article>
-      <article class="acard">
-        <a href="articles/madain-saleh.html" class="acard__link">
-          <div class="acard__head">
-            <span class="acard__avatar" style="--av:#2F3A2E;" aria-hidden="true">أ</span>
-            <div>
-              <span class="acard__author">أحمد غازي</span>
-              <span class="acard__role">كاتب رأي</span>
-            </div>
-          </div>
-          <h3 class="acard__title">مدائن صالح: رحلة عبر الزمن في قلب العلا</h3>
-          <p class="acard__excerpt">المكان الذي يجعل الزمن متحفًا مفتوحًا، حيث تتحدّث الواجهات الصخرية بلغةٍ لا تتقادم.</p>
-          <span class="acard__cta">اقرأ المقال ←</span>
-        </a>
-      </article>
-      <article class="acard">
-        <a href="articles/farasan-pearls.html" class="acard__link">
-          <div class="acard__head">
-            <span class="acard__avatar" style="--av:#8B4A2F;" aria-hidden="true">ع</span>
-            <div>
-              <span class="acard__author">عاصم العوفي</span>
-              <span class="acard__role">كاتب رأي</span>
-            </div>
-          </div>
-          <h3 class="acard__title">لآلئ فرسان الخالدة</h3>
-          <p class="acard__excerpt">البحر، الحجارة، القصص، والصمت. أربعة أوجه لجزر تروي ذاكرة جنوب المملكة لمن يُحسن الإصغاء.</p>
-          <span class="acard__cta">اقرأ المقال ←</span>
-        </a>
-      </article>
-    </div>
-  </div>
-</section>
-<!-- CREATIVE SECTION -->
-<section class="creative" id="creative">
-  <div class="creative__bg" aria-hidden="true"><span>إ</span></div>
-  <div class="wrap creative__inner">
-    <header class="creative__head">
-      <span class="creative__kicker">المساحة الإبداعية · حصري</span>
-      <h2 class="creative__title">قصص<span class="creative__title-em"> كُتبت </span>لتبقى</h2>
-      <span class="creative__rule" aria-hidden="true"></span>
-    </header>
-    <div class="creative__body">
-      <div>
-        <p class="creative__lede">مساحة إبداعية داخل صحيفة إرث، نكتب فيها عن المكان والإنسان والذاكرة بأسلوبٍ صحفيٍّ إبداعيّ، يُبرز المناطق السياحية والأثرية في المملكة العربية السعودية بروح سرديّة تحفظ أثر المكان في وجدان القارئ.</p>
-        <a href="creative/index.html" class="creative__cta">ادخل المساحة الإبداعية <span aria-hidden="true">→</span></a>
-        <div class="creative__signature">
-          <span></span>
-          <em>حُرّر بعناية في غرفة أخبار إرث</em>
-        </div>
-      </div>
-      <figure class="creative__quote">
-        <span class="creative__quote-mark" aria-hidden="true">"</span>
-        <blockquote>ليست كلّ القصص تُكتب لتُقرأ مرّة واحدة…<br/>بعضها يُكتب <em>ليبقى</em>.</blockquote>
-        <figcaption>— من افتتاحية المساحة الإبداعية</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-<!-- ABOUT SECTION -->
-<section class="section section--about" id="about">
-  <div class="wrap">
-    <header class="rule rule--center">
-      <span class="rule__kicker">من نحن</span>
-      <h2 class="rule__title">صحيفة إرث الإلكترونية</h2>
-    </header>
-    <div class="about-grid">
-      <div class="about-card">
-        <div class="about-card__icon">◈</div>
-        <h3 class="about-card__title">الرؤية</h3>
-        <p class="about-card__text">أن تكون صحيفة إرث مرجعًا وطنيًا للصحافة الثقافية في المملكة العربية السعودية، ومنصة رائدة في توثيق الذاكرة التاريخية والحضارية، تسهم في تعزيز حضور التراث السعودي محليًا وعالميًا.</p>
-      </div>
-      <div class="about-card about-card--center">
-        <div class="about-card__icon">◉</div>
-        <h3 class="about-card__title">الرسالة</h3>
-        <p class="about-card__text">تقديم نموذج صحفي معاصر يعيد قراءة الماضي بعيون الحاضر، ويربط بين الإنسان والمكان في إطار ثقافي وسياحي متوازن، مع الالتزام بالمصداقية والعمق في الطرح، وتوظيف اللغة الراقية والتصميم البصري لإيصال المعرفة بأسلوب مؤثر.</p>
-      </div>
-      <div class="about-card">
-        <div class="about-card__icon">◆</div>
-        <h3 class="about-card__title">الشعار</h3>
-        <p class="about-card__text about-card__motto">«ربط الإنسان بجذوره»</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- NEWSROOM SECTION -->
-<section class="section section--newsroom">
-  <div class="wrap">
-    <header class="rule">
-      <div class="rule__l">
-        <span class="rule__kicker">الفريق التحريري</span>
-        <h2 class="rule__title">غرفة الأخبار</h2>
-      </div>
-    </header>
-    <div class="newsroom-grid">
-      <div class="staff-card staff-card--lead">
-        <div class="staff-card__avatar" data-initial="س">س</div>
-        <div class="staff-card__body">
-          <span class="staff-card__role">رئيس التحرير</span>
-          <h4 class="staff-card__name">سلمان عبدالرحمن الطيران</h4>
-        </div>
-      </div>
-      <div class="staff-card">
-        <div class="staff-card__avatar" data-initial="ع">ع</div>
-        <div class="staff-card__body">
-          <span class="staff-card__role">مسؤول المنتج الرقمي</span>
-          <h4 class="staff-card__name">عبدالمجيد العرادي</h4>
-        </div>
-      </div>
-      <div class="staff-card">
-        <div class="staff-card__avatar" data-initial="ب">ب</div>
-        <div class="staff-card__body">
-          <span class="staff-card__role">محرر</span>
-          <h4 class="staff-card__name">باسم محمد المغربي</h4>
-        </div>
-      </div>
-      <div class="staff-card">
-        <div class="staff-card__avatar" data-initial="ف">ف</div>
-        <div class="staff-card__body">
-          <span class="staff-card__role">محرر</span>
-          <h4 class="staff-card__name">فراس الجهني</h4>
-        </div>
-      </div>
-      <div class="staff-card">
-        <div class="staff-card__avatar" data-initial="أ">أ</div>
-        <div class="staff-card__body">
-          <span class="staff-card__role">محرر</span>
-          <h4 class="staff-card__name">أحمد غازي</h4>
-        </div>
-      </div>
-      <div class="staff-card">
-        <div class="staff-card__avatar" data-initial="ع">ع</div>
-        <div class="staff-card__body">
-          <span class="staff-card__role">محرر</span>
-          <h4 class="staff-card__name">عمار المغذوي</h4>
-        </div>
-      </div>
-      <div class="staff-card">
-        <div class="staff-card__avatar" data-initial="م">م</div>
-        <div class="staff-card__body">
-          <span class="staff-card__role">محرر</span>
-          <h4 class="staff-card__name">مازن الأحمدي</h4>
-        </div>
-      </div>
-      <div class="staff-card">
-        <div class="staff-card__avatar" data-initial="ع">ع</div>
-        <div class="staff-card__body">
-          <span class="staff-card__role">محرر</span>
-          <h4 class="staff-card__name">عاصم العوفي</h4>
-        </div>
-      </div>
+  <!-- AXIS STRIP -->
+  <section class="axis" aria-label="محاور الصحيفة">
+    <div class="wrap axis__inner">
+      <span class="axis__label">محاور إرث التحريرية</span>
+      <ul class="axis__list">
+        <li><span class="axis__tag"><span class="axis__num">٠١</span>السياحة الثقافية</span></li>
+        <li><span class="axis__tag"><span class="axis__num">٠٢</span>التاريخ والتراث</span></li>
+        <li><span class="axis__tag"><span class="axis__num">٠٣</span>الآثار</span></li>
+        <li><span class="axis__tag"><span class="axis__num">٠٤</span>الهوية السعودية</span></li>
+      </ul>
     </div>
-  </div>
-</section>
-<!-- POLICIES SECTION -->
-<section class="section section--policies">
-  <div class="wrap">
-    <div class="policies-grid">
-      <div class="policy-card">
-        <h3 class="policy-card__title">سياسة النشر</h3>
-        <ul class="policy-card__list">
-          <li>الالتزام بالمصداقية في نقل المعلومات</li>
-          <li>الاعتماد على مصادر رسمية وموثوقة</li>
-          <li>توثيق المصادر في المواد الصحفية</li>
-          <li>التحقق من المحتوى قبل النشر</li>
-          <li>تقديم المعلومات بأسلوب واضح ودقيق</li>
-          <li>تجنب التضليل أو المبالغة</li>
-        </ul>
-      </div>
-      <div class="policy-card">
-        <h3 class="policy-card__title">أخلاقيات العمل الصحفي</h3>
-        <ul class="policy-card__list">
-          <li>الحياد في الطرح</li>
-          <li>إبداء الرأي بشكل متوازن ومسؤول</li>
-          <li>عدم التطرق لمواضيع قد تضر أهداف الصحيفة</li>
-          <li>احترام القيم الثقافية والمجتمعية</li>
-          <li>الفصل بين الرأي والخبر</li>
-        </ul>
-      </div>
-      <div class="policy-card">
-        <h3 class="policy-card__title">خطة النشر</h3>
-        <ul class="policy-card__list">
-          <li><strong>الأخبار:</strong> نشر يومي</li>
-          <li><strong>التقارير:</strong> نشر أسبوعي</li>
-          <li><strong>التحقيقات:</strong> نشر دوري حسب الإنتاج</li>
-          <li><strong>المقالات:</strong> نشر أسبوعي</li>
-          <li><strong>قصص كتبت لتبقى:</strong> شبه شهري</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- STATS SECTION -->
-<section class="stats-section">
-  <div class="wrap">
-    <div class="stats-grid">
-      <div class="stat-item">
-        <span class="stat-item__num">٧</span>
-        <span class="stat-item__label">أخبار</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-item__num">٦</span>
-        <span class="stat-item__label">تقارير</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-item__num">٢</span>
-        <span class="stat-item__label">تحقيقات</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-item__num">٤</span>
-        <span class="stat-item__label">مقالات</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-item__num">٨</span>
-        <span class="stat-item__label">محرر في غرفة الأخبار</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-item__num">٣</span>
-        <span class="stat-item__label">محاور تحريرية</span>
+  <!-- NEWS SECTION -->
+  <section class="section section--news" id="news">
+    <div class="wrap">
+      <header class="rule">
+        <div class="rule__l">
+          <span class="rule__kicker">القسم الأول · يوميّات</span>
+          <h2 class="rule__title">الأخبار</h2>
+        </div>
+        <p class="rule__r">رصد يومي للمشهد الثقافي والسياحي والتراثي في المملكة العربية السعودية، بمعالجة صحفية رشيقة وموثوقة.</p>
+      </header>
+      <div class="news-layout">
+        <article class="ncard ncard--lead">
+          <a href="news/diriyah-clay.html" class="ncard__link">
+            <div class="ncard__media ncard__media--lg" data-label="الدرعية · حيّ الطريف">
+              <img src="assets/images/news/diriyah-clay.jpg" alt="الدرعية · حيّ الطريف" loading="lazy" decoding="async">
+              <span class="ncard__corner">خبر رئيسي</span>
+            </div>
+            <div class="ncard__body">
+              <span class="ncard__cat">تراث · الدرعية</span>
+              <h3 class="ncard__title">الدرعية تُحيي ذاكرة الطين</h3>
+              <p class="ncard__excerpt">مشهد عمراني يستعيد ملامحه الأصيلة في حيّ الطريف، ويعيد تعريف العلاقة بين الحجر والإنسان في عاصمة الدولة السعودية الأولى.</p>
+              <div class="ncard__foot">
+                <span class="ncard__author">باسم محمد المغربي</span>
+                <span class="ncard__dot" aria-hidden="true"></span>
+                <span class="ncard__time">قراءة ٧ دقائق</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="ncard ncard--med-1">
+          <a href="news/masar-karam.html" class="ncard__link">
+            <div class="ncard__media" data-label="مسار الكرم">
+              <img src="assets/images/news/masar-karam.jpg" alt="مسار الكرم" loading="lazy" decoding="async">
+            </div>
+            <div class="ncard__body">
+              <span class="ncard__cat">شأن محلي · مشاريع</span>
+              <h3 class="ncard__title">إطلاق مشروع «مسار الكرم» لربط القصور التاريخية بأنسنة المدن</h3>
+              <div class="ncard__foot">
+                <span class="ncard__author">فراس الجهني</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <div class="ncard-list">
+          <h3 class="ncard-list__head">المزيد من الأخبار</h3>
+          <article class="nrow">
+            <a href="news/jizan-architecture.html" class="nrow__inner">
+              <span class="nrow__num">٠١</span>
+              <div class="nrow__body">
+                <span class="nrow__cat">عمران · جازان</span>
+                <h4 class="nrow__title">أمانة جازان تبدأ دمج «العمارة التقليدية» في مشاريع الأنسنة الحديثة</h4>
+                <span class="nrow__author">فراس الجهني</span>
+              </div>
+            </a>
+          </article>
+          <article class="nrow">
+            <a href="news/bir-urwa.html" class="nrow__inner">
+              <span class="nrow__num">٠٢</span>
+              <div class="nrow__body">
+                <span class="nrow__cat">تراث · المدينة المنورة</span>
+                <h4 class="nrow__title">بئر عروة بن الزبير: «عذوبة التاريخ» تتدفّق من جديد</h4>
+                <span class="nrow__author">عمار المغذوي</span>
+              </div>
+            </a>
+          </article>
+          <article class="nrow">
+            <a href="news/qassim-tourism.html" class="nrow__inner">
+              <span class="nrow__num">٠٣</span>
+              <div class="nrow__body">
+                <span class="nrow__cat">سياحة · القصيم</span>
+                <h4 class="nrow__title">السياحة التاريخية في القصيم… من حفظ الذاكرة إلى صناعة الوجهة</h4>
+                <span class="nrow__author">سلمان عبدالرحمن الطيران</span>
+              </div>
+            </a>
+          </article>
+          <article class="nrow">
+            <a href="news/jeddah-historic.html" class="nrow__inner">
+              <span class="nrow__num">٠٤</span>
+              <div class="nrow__body">
+                <span class="nrow__cat">سياحة · الحجاز</span>
+                <h4 class="nrow__title">جدة التاريخية ٢٠٢٦: قلب الحجاز ينبض بالحياة مجددًا</h4>
+                <span class="nrow__author">أحمد غازي</span>
+              </div>
+            </a>
+          </article>
+          <article class="nrow">
+            <a href="news/sayed-shuhada.html" class="nrow__inner">
+              <span class="nrow__num">٠٥</span>
+              <div class="nrow__body">
+                <span class="nrow__cat">سياحة دينية · المدينة المنورة</span>
+                <h4 class="nrow__title">إقبال واسع لزوار المدينة المنورة على وجهة «سيد الشهداء»</h4>
+                <span class="nrow__author">مازن الأحمدي</span>
+              </div>
+            </a>
+          </article>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- REPORTS SECTION -->
+  <section class="section section--reports" id="reports">
+    <div class="wrap">
+      <header class="rule">
+        <div class="rule__l">
+          <span class="rule__kicker rule__kicker--olive">القسم الثاني · ملفات</span>
+          <h2 class="rule__title">التقارير</h2>
+        </div>
+        <p class="rule__r">ملفات صحفية متأنّية تتناول الوجهات والمشاريع الثقافية بعمق توثيقي وتحليلي، نقدّمها للقارئ الذي يبحث عن المعنى خلف الخبر.</p>
+      </header>
+      <div class="reports-layout">
+        <article class="rcard--feature">
+          <a href="reports/jada-quba.html" class="rcard__link">
+            <div class="rcard__media" data-label="جادة قباء · المدينة المنورة">
+              <img src="assets/images/reports/jada-quba.jpg" alt="جادة قباء · المدينة المنورة" loading="lazy" decoding="async">
+            </div>
+            <div class="rcard__body">
+              <div class="rcard__head">
+                <span class="rcard__cat">تقرير · ملف خاص</span>
+                <span class="rcard__time">قراءة ١٢ دقيقة</span>
+              </div>
+              <h3 class="rcard__title">جادة قباء: قصة نجاح سعودية</h3>
+              <p class="rcard__excerpt">قراءة تفصيلية في تجربة المدينة المنورة لإعادة تشكيل المشهد العمراني والروحي حول أوّل مسجد في الإسلام، وكيف تحوّل المكان إلى نموذج وطني للتنمية الثقافية.</p>
+              <div class="rcard__foot">
+                <div class="byline">
+                  <span class="byline__avatar" style="background:var(--terra);" aria-hidden="true">ف</span>
+                  <span class="byline__name">فراس الجهني</span>
+                </div>
+                <span class="rcard__cta">قراءة الملف ←</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <ol class="reports-side">
+          <li class="rside">
+            <a href="reports/qassim-farms.html" class="rside__inner">
+              <span class="rside__index">تقرير · ٠٢</span>
+              <h4 class="rside__title">القصيم: تحوّل المزارع والاسطبلات لوجهات سياحية</h4>
+              <span class="rside__author">سلمان عبدالرحمن الطيران</span>
+            </a>
+          </li>
+          <li class="rside">
+            <a href="reports/makkah-smart.html" class="rside__inner">
+              <span class="rside__index">تقرير · ٠٣</span>
+              <h4 class="rside__title">مكة المكرمة ٢٠٢٦: منظومة ذكية</h4>
+              <span class="rside__author">أحمد غازي</span>
+            </a>
+          </li>
+          <li class="rside">
+            <a href="reports/taibah.html" class="rside__inner">
+              <span class="rside__index">تقرير · ٠٤</span>
+              <h4 class="rside__title">مبادرة طيبة</h4>
+              <span class="rside__author">أحمد غازي</span>
+            </a>
+          </li>
+          <li class="rside">
+            <a href="reports/hijaz-railway.html" class="rside__inner">
+              <span class="rside__index">تقرير · ٠٥</span>
+              <h4 class="rside__title">محطة سكة حديد الحجاز</h4>
+              <span class="rside__author">عاصم العوفي</span>
+            </a>
+          </li>
+          <li class="rside">
+            <a href="reports/jabal-uhud.html" class="rside__inner">
+              <span class="rside__index">تقرير · ٠٦</span>
+              <h4 class="rside__title">جبل أُحد</h4>
+              <span class="rside__author">مازن الأحمدي</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTIGATIONS SECTION -->
+  <section class="section section--invest" id="invest">
+    <div class="wrap">
+      <header class="rule rule--center">
+        <span class="rule__kicker">القسم الثالث · العمق</span>
+        <h2 class="rule__title rule__title--xl">التحقيقات</h2>
+        <p class="rule__r" style="text-align:center;max-width:600px;margin:14px auto 0;">ملفات استقصائية معمّقة تطرح الأسئلة الكبرى وتفتح نقاشات جوهرية حول التراث والهوية والتحوّلات المعاصرة.</p>
+      </header>
+      <div class="invest-grid">
+        <article class="icard">
+          <div class="icard__rule">
+            <span>تحقيق · ٠١</span>
+            <span class="icard__line"></span>
+            <span class="icard__time">قراءة ١٥ دقيقة</span>
+          </div>
+          <div class="icard__media" data-label="التكنولوجيا · التراث">
+            <img src="assets/images/investigations/tech-heritage.jpg" alt="التكنولوجيا والتراث" loading="lazy" decoding="async">
+          </div>
+          <div class="icard__body">
+            <h3 class="icard__title">هل تُنقذ التكنولوجيا التراث أم تُفقده روحه؟</h3>
+            <p class="icard__dek">سؤالٌ مفتوح يتحرّك بين التوثيق الرقمي والذاكرة الإنسانية، نطرحه على المختصين والممارسين والزوار في رحلة بحثية تمتدّ من المتاحف الافتراضية إلى أزقّة المواقع الأثرية.</p>
+            <div class="icard__foot">
+              <div class="byline">
+                <span class="byline__avatar" aria-hidden="true">ب</span>
+                <span class="byline__name">باسم محمد المغربي</span>
+              </div>
+              <a href="investigations/tech-heritage.html" class="icard__cta">اقرأ التحقيق ←</a>
+            </div>
+          </div>
+        </article>
+        <article class="icard">
+          <div class="icard__rule">
+            <span>تحقيق · ٠٢</span>
+            <span class="icard__line"></span>
+            <span class="icard__time">قراءة ١٠ دقائق</span>
+          </div>
+          <div class="icard__media" data-label="جامع الشيخ · عنيزة">
+            <img src="assets/images/investigations/sheikh-mosque-unaizah.jpg" alt="جامع الشيخ · عنيزة" loading="lazy" decoding="async">
+          </div>
+          <div class="icard__body">
+            <h3 class="icard__title">جامع الشيخ في عنيزة</h3>
+            <p class="icard__dek">قراءة في حكاية معلَم ديني وعمراني يحتل مكانة خاصة في وجدان أهل القصيم، نُفكّك فيها الرواية المتوارثة من خلال الوثائق والشهادات الحيّة.</p>
+            <div class="icard__foot">
+              <div class="byline">
+                <span class="byline__avatar" aria-hidden="true">س</span>
+                <span class="byline__name">سلمان عبدالرحمن الطيران</span>
+              </div>
+              <a href="investigations/sheikh-mosque-unaizah.html" class="icard__cta">اقرأ التحقيق ←</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES SECTION -->
+  <section class="section section--articles" id="articles">
+    <div class="wrap">
+      <header class="rule">
+        <div class="rule__l">
+          <span class="rule__kicker">القسم الرابع · رأي</span>
+          <h2 class="rule__title">المقالات</h2>
+        </div>
+        <p class="rule__r">أصوات تكتب عن المكان كما تعيشه، وعن التراث كما تشعر به، في مساحات رأي حرّة ومسؤولة.</p>
+      </header>
+      <div class="articles-grid">
+        <article class="acard">
+          <a href="articles/city-not-just-city.html" class="acard__link">
+            <div class="acard__head">
+              <span class="acard__avatar" style="--av:#2F3A2E;" aria-hidden="true">ع</span>
+              <div>
+                <span class="acard__author">عمار محمد المغذوي</span>
+                <span class="acard__role">كاتب رأي</span>
+              </div>
+            </div>
+            <h3 class="acard__title">المدينة.. ليست مجرد مدينة!</h3>
+            <p class="acard__excerpt">تأمّلٌ في معنى المدينة المنورة في الوجدان، وكيف تتجاوز جغرافيتها لتصبح حالة شعورية تستوطن القلب قبل المكان.</p>
+            <span class="acard__cta">اقرأ المقال ←</span>
+          </a>
+        </article>
+        <article class="acard">
+          <a href="articles/dhee-ain-pearl.html" class="acard__link">
+            <div class="acard__head">
+              <span class="acard__avatar" style="--av:#8B4A2F;" aria-hidden="true">ف</span>
+              <div>
+                <span class="acard__author">فراس الجهني</span>
+                <span class="acard__role">كاتب رأي</span>
+              </div>
+            </div>
+            <h3 class="acard__title">«ذي عَين».. لؤلؤة بيضاء في حضن جبال الباحة</h3>
+            <p class="acard__excerpt">قرية حجرية تنام على كتف الجبل، وتروي حكايتها للزائر بصبر الحجارة وألفة المكان الذي لا يُغلق بابه.</p>
+            <span class="acard__cta">اقرأ المقال ←</span>
+          </a>
+        </article>
+        <article class="acard">
+          <a href="articles/madain-saleh.html" class="acard__link">
+            <div class="acard__head">
+              <span class="acard__avatar" style="--av:#2F3A2E;" aria-hidden="true">أ</span>
+              <div>
+                <span class="acard__author">أحمد غازي</span>
+                <span class="acard__role">كاتب رأي</span>
+              </div>
+            </div>
+            <h3 class="acard__title">مدائن صالح: رحلة عبر الزمن في قلب العلا</h3>
+            <p class="acard__excerpt">المكان الذي يجعل الزمن متحفًا مفتوحًا، حيث تتحدّث الواجهات الصخرية بلغةٍ لا تتقادم.</p>
+            <span class="acard__cta">اقرأ المقال ←</span>
+          </a>
+        </article>
+        <article class="acard">
+          <a href="articles/farasan-pearls.html" class="acard__link">
+            <div class="acard__head">
+              <span class="acard__avatar" style="--av:#8B4A2F;" aria-hidden="true">ع</span>
+              <div>
+                <span class="acard__author">عاصم العوفي</span>
+                <span class="acard__role">كاتب رأي</span>
+              </div>
+            </div>
+            <h3 class="acard__title">لآلئ فرسان الخالدة</h3>
+            <p class="acard__excerpt">البحر، الحجارة، القصص، والصمت. أربعة أوجه لجزر تروي ذاكرة جنوب المملكة لمن يُحسن الإصغاء.</p>
+            <span class="acard__cta">اقرأ المقال ←</span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATIVE SECTION -->
+  <section class="creative" id="creative">
+    <div class="creative__bg" aria-hidden="true"><span>إ</span></div>
+    <div class="wrap creative__inner">
+      <header class="creative__head">
+        <span class="creative__kicker">المساحة الإبداعية · حصري</span>
+        <h2 class="creative__title">قصص<span class="creative__title-em"> كُتبت </span>لتبقى</h2>
+        <span class="creative__rule" aria-hidden="true"></span>
+      </header>
+      <div class="creative__body">
+        <div>
+          <p class="creative__lede">مساحة إبداعية داخل صحيفة إرث، نكتب فيها عن المكان والإنسان والذاكرة بأسلوبٍ صحفيٍّ إبداعيّ، يُبرز المناطق السياحية والأثرية في المملكة العربية السعودية بروح سرديّة تحفظ أثر المكان في وجدان القارئ.</p>
+          <a href="creative/index.html" class="creative__cta">ادخل المساحة الإبداعية <span aria-hidden="true">→</span></a>
+          <div class="creative__signature">
+            <span></span>
+            <em>حُرّر بعناية في غرفة أخبار إرث</em>
+          </div>
+        </div>
+        <figure class="creative__quote">
+          <span class="creative__quote-mark" aria-hidden="true">"</span>
+          <blockquote>ليست كلّ القصص تُكتب لتُقرأ مرّة واحدة…<br/>بعضها يُكتب <em>ليبقى</em>.</blockquote>
+          <figcaption>— من افتتاحية المساحة الإبداعية</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section section--about" id="about">
+    <div class="wrap">
+      <header class="rule rule--center">
+        <span class="rule__kicker">من نحن</span>
+        <h2 class="rule__title">صحيفة إرث الإلكترونية</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card__icon" aria-hidden="true">◈</div>
+          <h3 class="about-card__title">الرؤية</h3>
+          <p class="about-card__text">أن تكون صحيفة إرث مرجعًا وطنيًا للصحافة الثقافية في المملكة العربية السعودية، ومنصة رائدة في توثيق الذاكرة التاريخية والحضارية، تسهم في تعزيز حضور التراث السعودي محليًا وعالميًا.</p>
+        </div>
+        <div class="about-card about-card--center">
+          <div class="about-card__icon" aria-hidden="true">◉</div>
+          <h3 class="about-card__title">الرسالة</h3>
+          <p class="about-card__text">تقديم نموذج صحفي معاصر يعيد قراءة الماضي بعيون الحاضر، ويربط بين الإنسان والمكان في إطار ثقافي وسياحي متوازن، مع الالتزام بالمصداقية والعمق في الطرح، وتوظيف اللغة الراقية والتصميم البصري لإيصال المعرفة بأسلوب مؤثر.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__icon" aria-hidden="true">◆</div>
+          <h3 class="about-card__title">الشعار</h3>
+          <p class="about-card__text about-card__motto">«ربط الإنسان بجذوره»</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSROOM SECTION -->
+  <section class="section section--newsroom" id="newsroom">
+    <div class="wrap">
+      <header class="rule">
+        <div class="rule__l">
+          <span class="rule__kicker">الفريق التحريري</span>
+          <h2 class="rule__title">غرفة الأخبار</h2>
+        </div>
+      </header>
+      <div class="newsroom-grid">
+        <div class="staff-card staff-card--lead">
+          <div class="staff-card__avatar" data-initial="س" aria-hidden="true">س</div>
+          <div class="staff-card__body">
+            <span class="staff-card__role">رئيس التحرير</span>
+            <h3 class="staff-card__name">سلمان عبدالرحمن الطيران</h3>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-card__avatar" data-initial="ع" aria-hidden="true">ع</div>
+          <div class="staff-card__body">
+            <span class="staff-card__role">مسؤول المنتج الرقمي</span>
+            <h3 class="staff-card__name">عبدالمجيد العرادي</h3>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-card__avatar" data-initial="ب" aria-hidden="true">ب</div>
+          <div class="staff-card__body">
+            <span class="staff-card__role">محرر</span>
+            <h3 class="staff-card__name">باسم محمد المغربي</h3>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-card__avatar" data-initial="ف" aria-hidden="true">ف</div>
+          <div class="staff-card__body">
+            <span class="staff-card__role">محرر</span>
+            <h3 class="staff-card__name">فراس الجهني</h3>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-card__avatar" data-initial="أ" aria-hidden="true">أ</div>
+          <div class="staff-card__body">
+            <span class="staff-card__role">محرر</span>
+            <h3 class="staff-card__name">أحمد غازي</h3>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-card__avatar" data-initial="ع" aria-hidden="true">ع</div>
+          <div class="staff-card__body">
+            <span class="staff-card__role">محرر</span>
+            <h3 class="staff-card__name">عمار المغذوي</h3>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-card__avatar" data-initial="م" aria-hidden="true">م</div>
+          <div class="staff-card__body">
+            <span class="staff-card__role">محرر</span>
+            <h3 class="staff-card__name">مازن الأحمدي</h3>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-card__avatar" data-initial="ع" aria-hidden="true">ع</div>
+          <div class="staff-card__body">
+            <span class="staff-card__role">محرر</span>
+            <h3 class="staff-card__name">عاصم العوفي</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POLICIES SECTION -->
+  <section class="section section--policies" id="policies">
+    <div class="wrap">
+      <div class="policies-grid">
+        <div class="policy-card">
+          <h3 class="policy-card__title">سياسة النشر</h3>
+          <ul class="policy-card__list">
+            <li>الالتزام بالمصداقية في نقل المعلومات</li>
+            <li>الاعتماد على مصادر رسمية وموثوقة</li>
+            <li>توثيق المصادر في المواد الصحفية</li>
+            <li>التحقق من المحتوى قبل النشر</li>
+            <li>تقديم المعلومات بأسلوب واضح ودقيق</li>
+            <li>تجنب التضليل أو المبالغة</li>
+          </ul>
+        </div>
+        <div class="policy-card">
+          <h3 class="policy-card__title">أخلاقيات العمل الصحفي</h3>
+          <ul class="policy-card__list">
+            <li>الحياد في الطرح</li>
+            <li>إبداء الرأي بشكل متوازن ومسؤول</li>
+            <li>عدم التطرق لمواضيع قد تضر أهداف الصحيفة</li>
+            <li>احترام القيم الثقافية والمجتمعية</li>
+            <li>الفصل بين الرأي والخبر</li>
+          </ul>
+        </div>
+        <div class="policy-card">
+          <h3 class="policy-card__title">خطة النشر</h3>
+          <ul class="policy-card__list">
+            <li><strong>الأخبار:</strong> نشر يومي</li>
+            <li><strong>التقارير:</strong> نشر أسبوعي</li>
+            <li><strong>التحقيقات:</strong> نشر دوري حسب الإنتاج</li>
+            <li><strong>المقالات:</strong> نشر أسبوعي</li>
+            <li><strong>قصص كتبت لتبقى:</strong> شبه شهري</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="stats-section">
+    <div class="wrap">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-item__num">٧</span>
+          <span class="stat-item__label">أخبار</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__num">٦</span>
+          <span class="stat-item__label">تقارير</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__num">٢</span>
+          <span class="stat-item__label">تحقيقات</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__num">٤</span>
+          <span class="stat-item__label">مقالات</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__num">٨</span>
+          <span class="stat-item__label">محرر في غرفة الأخبار</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__num">٣</span>
+          <span class="stat-item__label">محاور تحريرية</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
 <!-- FOOTER -->
 <footer class="site-footer" id="contact">
   <div class="site-footer__top">
     <div class="wrap" style="display:grid;grid-template-columns:1.4fr 2fr;gap:64px;align-items:start;">
       <div>
         <h3 class="site-footer__name">صحيفة إِرْث الإلكترونية</h3>
-        <span class="site-footer__sub">ERTH · DIGITAL NEWSPAPER</span>
+        <span class="site-footer__sub" lang="en">ERTH · DIGITAL NEWSPAPER</span>
         <p class="site-footer__about">منصة صحفية ثقافية رقمية تربط الإنسان بجذوره، وتعيد قراءة التاريخ والآثار والسياحة في المملكة العربية السعودية بأسلوبٍ معاصر.</p>
         <span class="site-footer__motto">«ربط الإنسان بجذوره»</span>
       </div>
@@ -673,9 +758,9 @@
           <ul>
             <li><a href="#about">من نحن</a></li>
             <li><a href="#about">الرؤية والرسالة</a></li>
-            <li><a href="#about">غرفة الأخبار</a></li>
-            <li><a href="#about">سياسة النشر</a></li>
-            <li><a href="#about">أخلاقيات العمل</a></li>
+            <li><a href="#newsroom">غرفة الأخبار</a></li>
+            <li><a href="#policies">سياسة النشر</a></li>
+            <li><a href="#policies">أخلاقيات العمل</a></li>
           </ul>
         </div>
         <div>
@@ -683,9 +768,9 @@
           <ul>
             <li><a href="mailto:erthdigital@gmail.com">erthdigital@gmail.com</a></li>
             <li><a href="tel:+966501514110">0501514110</a></li>
-            <li><a href="https://x.com/erthdigital0?s=21" target="_blank" rel="noopener noreferrer">X / تويتر</a></li>
-            <li><a href="https://www.instagram.com/erth_13" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@erth_13" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+            <li><a href="https://x.com/erthdigital0?s=21" target="_blank" rel="noopener noreferrer"><span lang="en">X</span> / تويتر</a></li>
+            <li><a href="https://www.instagram.com/erth_13" target="_blank" rel="noopener noreferrer"><span lang="en">Instagram</span></a></li>
+            <li><a href="https://www.tiktok.com/@erth_13" target="_blank" rel="noopener noreferrer"><span lang="en">TikTok</span></a></li>
           </ul>
         </div>
       </div>
@@ -698,7 +783,7 @@
     </div>
   </div>
 </footer>
-<script src="script.js"></script>
+
+<script src="script.js" defer></script>
 </body>
 </html>
-
