@@ -7,19 +7,33 @@
   <meta name="description" content="المساحة الإبداعية في صحيفة إرث الإلكترونية — قصص كُتبت لتبقى." />
   <link rel="preload" href="../assets/fonts/thmanyahseriftext-Regular.otf" as="font" type="font/otf" crossorigin />
   <style>
-    @font-face { font-family: 'Thmanyah Serif'; src: url('../assets/fonts/thmanyahseriftext-Light.otf') format('opentype'); font-weight: 300; font-style: normal; font-display: swap; }
-    @font-face { font-family: 'Thmanyah Serif'; src: url('../assets/fonts/thmanyahseriftext-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
-    @font-face { font-family: 'Thmanyah Serif'; src: url('../assets/fonts/thmanyahseriftext-Medium.otf') format('opentype'); font-weight: 500; font-style: normal; font-display: swap; }
-    @font-face { font-family: 'Thmanyah Serif'; src: url('../assets/fonts/thmanyahseriftext-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
-    @font-face { font-family: 'Thmanyah Serif'; src: url('../assets/fonts/thmanyahseriftext-Black.otf') format('opentype'); font-weight: 900; font-style: normal; font-display: swap; }
+    @font-face {
+      font-family: 'Thmanyah Serif';
+      src: url('../assets/fonts/thmanyahseriftext-Light.otf') format('opentype');
+      font-weight: 300; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Thmanyah Serif';
+      src: url('../assets/fonts/thmanyahseriftext-Regular.otf') format('opentype');
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Thmanyah Serif';
+      src: url('../assets/fonts/thmanyahseriftext-Medium.otf') format('opentype');
+      font-weight: 500; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Thmanyah Serif';
+      src: url('../assets/fonts/thmanyahseriftext-Bold.otf') format('opentype');
+      font-weight: 700; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Thmanyah Serif';
+      src: url('../assets/fonts/thmanyahseriftext-Black.otf') format('opentype');
+      font-weight: 900; font-style: normal; font-display: swap;
+    }
     html, body, h1, h2, h3, h4, h5, h6, p, span, a, li, button,
-    blockquote, figcaption, em, strong, i, b,
-    .article-tag, .article-meta, .article-content, .article-content p,
-    .article-back-btn, .breadcrumb, .topbar__left, .topbar__right,
-    .wordmark__name, .site-footer__name, .site-footer__motto,
-    .primary-nav__list, .primary-nav__list a,
-    .mobile-nav__brand, .mobile-nav__list, .nav-toggle,
-    .btn, .btn--solid, .btn--ghost, .btn--block, .btn--lg {
+    blockquote, figcaption, em, strong, i, b {
       font-family: 'Thmanyah Serif', 'Tahoma', Arial, sans-serif !important;
     }
   </style>
@@ -40,28 +54,22 @@
       </div>
     </div>
   </div>
-
   <header class="masthead" id="masthead">
     <div class="wrap masthead__inner">
       <div class="masthead__start">
         <button class="nav-toggle" id="navToggle" type="button" aria-label="القائمة" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </button>
       </div>
-
       <div class="wordmark">
         <a href="../index.html" class="wordmark__logo-link" aria-label="صحيفة إرث الإلكترونية - الرئيسية">
           <img src="../assets/images/ui/logo-erth.svg" alt="شعار صحيفة إرث" class="wordmark__logo" onerror="this.style.display='none'">
         </a>
       </div>
-
       <div class="masthead__end">
         <a href="../index.html" class="btn btn--ghost">الرئيسية</a>
       </div>
     </div>
-
     <nav class="primary-nav" aria-label="التنقل الرئيسي">
       <ul class="primary-nav__list">
         <li><a href="../index.html">الرئيسية</a></li>
@@ -75,7 +83,6 @@
       </ul>
     </nav>
   </header>
-
   <aside class="mobile-nav" id="mobileNav" aria-hidden="true">
     <div class="mobile-nav__head">
       <span class="mobile-nav__brand">صحيفة إرث</span>
@@ -93,42 +100,123 @@
     </ul>
   </aside>
   <div class="overlay-backdrop" id="overlayBackdrop"></div>
-
-  <main class="article-page">
+  <main class="creative-page">
+    <header class="creative-page__hero">
+      <div class="wrap">
+        <span class="creative-page__kicker">المساحة الإبداعية</span>
+        <h1 class="creative-page__title">قصص كُتبت لتبقى</h1>
+        <span class="creative-page__rule" aria-hidden="true"></span>
+        <blockquote class="creative-page__epigraph">
+          ليست كلّ القصص تُكتب لتُقرأ مرّة واحدة… بعضها يُكتب <em>ليبقى</em>.
+        </blockquote>
+      </div>
+    </header>
     <div class="wrap">
-      <article class="article" style="text-align:center; padding-top:80px; padding-bottom:80px;">
-        <nav class="breadcrumb" aria-label="مسار التصفح" style="justify-content:center;">
-          <a href="../index.html">الرئيسية</a>
-          <span>›</span>
-          <span>قصص كُتبت لتبقى</span>
-        </nav>
-
-        <header class="article-header" style="text-align:center;">
-          <span class="article-tag">المساحة الإبداعية</span>
-          <h1>قصص كُتبت لتبقى</h1>
-          <div class="article-meta" style="justify-content:center;">
-            <span>صحيفة إرث الإلكترونية</span>
+      <div class="creative-stories">
+        <article class="cstory">
+          <h2 class="cstory__title">باريس الصحراء</h2>
+          <p class="cstory__author">بقلم: سلمان عبدالرحمن عيسى الطيران</p>
+          <div class="cstory__divider" aria-hidden="true"></div>
+          <div class="cstory__body">
+            <p>في قلب الصحراء، حيث يمتد الأفق بلا حدود، تبرز منطقة القصيم كحالة شعورية استثنائية تتجاوز حدود الجغرافيا، لترسم ملامح حياة تنبض بالعراقة والأصالة. هنا، في "باريس نجد" -كما وصفها الأديب أمين الريحاني عام 1922م- لا تبدأ الحكايات من معالم المكان فحسب، بل من وجوه أهله التي تفيض بالترحاب وفناجين القهوة التي تُقدم بقلب العائلة الواحدة.</p>
+            <p>لقد استطاع الريحاني حين أطلق لقبه الشهير على عنيزة، أن يلتقط روحاً خفية تتجاوز العمران لتصل إلى جوهر الإنسان؛ حيث تختلط البساطة بالأناقة، وتُفتح المجالس للضيوف كما تُفتح النوافذ للضوء. ففي القصيم، تتحول التفاصيل الصغيرة إلى معنى يعاش في الأسواق النابضة بالحركة، وتحت ظلال النخيل الشاهد على تعاقب الزمن، وفي الأحاديث الهادئة التي توحي بأن الوقت نفسه يلين احتراماً لسكينة هذا المكان.</p>
+            <p>إن وصف "باريس نجد" لم يكن مجرد إطراء عابر، بل شهادة على جمال يتجلى في دفء اللقاء وأصالة الروح، وقدرة المكان على احتواء الغريب وكأنه جزء من تاريخه. هكذا تظل القصيم مدينة تُكتب مرة واحدة، لكنها تُقرأ في القلب طويلاً، كقصة لا تنتهي، كُتبت لتبقى شاهدة على حضارة الإنسان وكرم الأرض.</p>
           </div>
-        </header>
-
-        <section class="article-content" style="text-align:center;">
-          <p style="font-size:22px; line-height:2; margin-bottom:32px;">مساحة إبداعية داخل صحيفة إرث، نكتب فيها عن المكان والإنسان والذاكرة بأسلوبٌ صحفيٍ إبداعي،ّ يُبرز المناطق السياحية والأثرية في المملكة العربية السعودية بروح سرديّة تحفظ أثر المكان في وجدان القارئ.</p>
-          <p style="font-size:18px; color:var(--ink-mute); margin-top:48px;">قريباً.. قصصنا الأولى</p>
-          <p style="font-size:16px; color:var(--ink-mute); margin-top:16px;">"ليست كلّ القصص تُكتب لتُقرأ مرّة واحدة… بعضها يُكتب ليبقى."</p>
-        </section>
-
-        <a href="../index.html" class="article-back-btn">العودة إلى الرئيسية</a>
-      </article>
+        </article>
+        <hr class="creative-stories__separator" aria-hidden="true" />
+        <article class="cstory">
+          <h2 class="cstory__title">عبق العقيق</h2>
+          <p class="cstory__author">بقلم: عمار المغذوي</p>
+          <div class="cstory__divider" aria-hidden="true"></div>
+          <div class="cstory__body">
+            <p>في أطراف المدينة المنورة، يمتد وادي العقيق كقصيدةٍ خضراء كتبتها الطبيعة، وتناقلتها الأجيال بتبجيلٍ وحب. يُعرف بـ "الوادي المبارك"، وهو اسمٌ يمنحه هالةً من القدسية تجعل السير على ضفافه تجربةً تتجاوز حدود النزهة العادية.</p>
+            <p>حين تهطل الأمطار، يستيقظ الوادي من صمته، فتتدفق مياهه لتروي الأرض والوجدان معًا. هنا، كانت القصور تُبنى والمزارع تزهو، لتتحول ضفاف العقيق عبر العصور إلى صالونٍ مفتوح للأدب والشعر، وملاذٍ لمن يبحث عن الهدوء بعيدًا عن ضجيج الحياة اليومية.</p>
+            <p>كل حصاةٍ في مجراه تحكي عن زمنٍ مضى، وعن قوافل مرت من هنا، وعن سكان المدينة الذين وجدوا في هذا الوادي مرآةً لجمال مدينتهم. من يقف عند حواف العقيق، لا يرى مجرد تضاريس جغرافية، بل يلمس روحًا تسكن المكان، تربط الإنسان ببيئته في تناغمٍ عجيب.</p>
+            <p>وادي العقيق ليس مجرد معلمٍ طبيعي، بل هو جزءٌ أصيل من هوية المكان. تجربة زيارته تعيد تذكيرنا بأن الجمال الحقيقي يكمن في تلك التفاصيل التي باركها التاريخ، واحتضنتها الأرض لتظل حيةً في ذاكرة كل من مرّ بها.</p>
+          </div>
+        </article>
+        <hr class="creative-stories__separator" aria-hidden="true" />        <article class="cstory">
+          <h2 class="cstory__title">جوهرة وادي حنيفة: قصة البدايات</h2>
+          <p class="cstory__author">بقلم: فراس علي عوده الرفاعي الجهني</p>
+          <div class="cstory__divider" aria-hidden="true"></div>
+          <div class="cstory__body">
+            <p>على ضفاف وادي حنيفة، حيث تروي سعفات النخيل حكايات الزمن العتيق، تقف الدرعية لا كمدينة بُنيت من طين، بل كحارس أمين لـ "ذاكرة البدايات". هناك، حين تخطو في ممراتها، لا تقابلك جدران صامتة، بل تهمس لك الأزقة بأصوات الفرسان ووقع حوافر الخيل التي رسمت فجراً جديداً لجزيرة العرب. في تلك البقعة، تعانق صلابة الطين دفء الشمس، لتروي قصة أمة نهضت من قلب الصحراء؛ قصة أجداد زرعوا أحلامهم وعزائمهم في الأرض، فأثمرت وطناً يمتد من الأفق إلى الأفق، جاعلين من كل زاوية ونافذة نبضاً حياً يحكي ملحمة العز والتوحيد التي لا تشيخ.</p>
+            <p>ولم تكن الدرعية يوماً مجرد محطة عابرة في صفحات التاريخ، بل هي العاصمة الأولى ومربع الحكم الذي انطلقت منه الدولة السعودية الأولى عام 1727م. تتجسد في هذه الأرض عبقرية العمارة النجدية التي طوعت قسوة الطبيعة، وهو ما تُوج بتسجيل "حي الطريف" التاريخي ضمن قائمة التراث العالمي لليونسكو. وفي قلبها، يقف "قصر سلوى" الشامخ كأكبر قصورها وشاهداً على عصر من الوحدة والازدهار. اليوم، لا تُقرأ الدرعية كأطلال ماضٍ، بل كوجهة حضارية تنبض بالحياة، تدمج بين إرث الأمس ورؤية الغد، لتؤكد للعالم أن الجذور العميقة هي وحدها القادرة على معانقة السماء.</p>
+          </div>
+        </article>
+        <hr class="creative-stories__separator" aria-hidden="true" />
+        <article class="cstory">
+          <h2 class="cstory__title">واحة العلا الخالدة</h2>
+          <p class="cstory__author">بقلم: عاصم محمد باخت العوفي</p>
+          <div class="cstory__divider" aria-hidden="true"></div>
+          <div class="cstory__body">
+            <p>متحف طبيعي مفتوح، تعانق فيه أشجار النخيل جبال الحجر الرملي الشاهقة. أرضٌ اختارتها الحضارات القديمة لتنحت في صخورها صفحات من التاريخ، لتبقى شاهدةً على إرادة الإنسان وإبداع الخالق في قلب الصحراء.</p>
+            <p>حين تخطو على رمال العلا، يتلاشى صخب الحاضر تدريجياً، وتجد نفسك تسير في أروقة خفية للزمن القديم. لم تكن هذه الواحة الغنّاء يوماً مجرد محطة عبور صامتة على هامش الصحراء، بل كانت أُماً رؤوماً وملاذاً ينبض بالحياة. تخيل المزارع القديم وهو ينحني على ترابها البكر، يغرس فسائل النخيل بحب، ويزرع أشجار الحمضيات التي تعطر أنفاس الوادي، ويسقي بساتينها الممتدة من عيون المياه العذبة التي تفجرت بين الصخور. بفضل تلك العبقرية الزراعية الأصيلة، غدت الواحة شريان حياة ومرفأً دافئاً استقبل قوافل البخور والتوابل المنهكة، لتمسح عن مسافريها غبار السفر الطويل وتمنحهم الأمان في ظلالها الوارفة.</p>
+            <p>وفي أحضان هذا الوادي الخصيب، وتحت ظلال جباله الشاهقة، نهضت "مملكة دادان" العظيمة. لم تكن مجرد مدينة تُبنى وتُنسى، بل كانت عاصمةً تضج بثقافة التجارة وفنون الحياة. هناك، ترك الدادانيون واللحيانيون حكاياتهم وملاحمهم محفورة بدقة متناهية في واجهات الجبال الحمراء، تراقبها "مقابر الأسود" المهيبة بعيون حجرية لا تنام. لقد كانوا هنا، يبنون مجداً عظيماً، ويتحدثون بلغات طوتها السنين، لكن صدى همساتهم في الأسواق، وأصوات قوافلهم المحملة باللبان والنفائس، لا يزال يتردد كاللحن الخفي بين جنبات الوادي.</p>
+            <p>ولأن سحر المكان يأسر الألباب، سار الأنباط على خطى من سبقوهم، ليصيغوا تحفتهم الخالدة في "مدائن صالح". في ذلك الوادي الساحر، أمسكوا بأزاميلهم لا ليحطموا الصخر الأصم، بل ليعقدوا معه عهداً من الجمال. نحتوا واجهات هندسية ساحرة، وزينوا مداخلها بالنسور المحلقة والتيجان المهيبة، لتتحدى عواصف السنين وتقلبات الأيام. حين تقف أمام "القصر الفريد" المنتصب بوحدته وشموخه، تكاد تسمع إيقاع المطارق القديمة. وكأن كل ضربة نحتٍ هناك كانت رسالة صريحة، وبياناً يُتلى على مسامع الأجيال: "نحن مررنا من هنا، وصنعنا أثراً لا يمحوه النسيان".</p>
+            <p>وكأن الطبيعة أبت إلا أن تشارك الإنسان في صياغة هذا الإرث المذهل، فشكلت عبر آلاف السنين، وبأيدي الرياح وعوامل التعرية، "جبل الفيل". يقف هذا الطود الرملي الضخم بشموخٍ آسر وسط الرمال الذهبية، كحارس صامت يراقب تعاقب الأزمان وتبدل الوجوه والقوافل.</p>
+            <p>في ليالي العلا، حين يخيم السكون وتحت سماء مرصعة بنجوم لا تُحصى، يكاد النسيم العليل يحمل إليك أصداء المسافرين القدامى، وأحاديثهم الدافئة حول نيران المخيمات. في العلا، أنت لا تقرأ التاريخ كمعلومات جافة في صفحات الكتب، بل تتنفسه في عبق كل نخلة، وتلمسه في كل نقش قديم قاوم الفناء. إنها ليست مجرد حجارة ورمال، بل هي نبض إنساني عتيق تجمد في الصخر، وإرث عظيم، وقصة طموح كُتبت لتبقى حية في وجدان كل من يطأ أرضها.</p>
+          </div>
+        </article>
+        <hr class="creative-stories__separator" aria-hidden="true" />        <article class="cstory">
+          <h2 class="cstory__title">ذاكرة البحر</h2>
+          <p class="cstory__author">بقلم: باسم محمد المغربي</p>
+          <div class="cstory__divider" aria-hidden="true"></div>
+          <div class="cstory__body">
+            <p>في قلب جدة، بعيدًا عن صخب الحاضر، تختبئ مدينة لا تشبه الزمن الذي نعيشه. أزقة ضيقة، وبيوتٌ ترتفع بشرفاتها الخشبية، وكأنها تراقب المارّين منذ مئات السنين.</p>
+            <p>لم تكن جدة التاريخية مجرد حيٍّ سكني، بل كانت بوابة للعالم. منها دخل الحجاج، وعبرها مرّ التجار، واختلطت فيها لغات وثقافات، حتى أصبحت أشبه بلوحةٍ حيّة تتغير تفاصيلها مع كل عابر.</p>
+            <p>على جدرانها، آثار تعب المسافرين، وحنين العائدين، وصبر الذين انتظروا على الموانئ. كل زاوية فيها تحمل قصة؛ بابٌ فُتح لضيف، ونافذةٌ أُغلقت على وداع، وسوقٌ ضجّ بالحياة ثم هدأ، لكنه لم يُنسَ.</p>
+            <p>حين تمشي بين بيوتها، لا تشعر أنك تسير في مكانٍ قديم، بل في ذاكرةٍ مفتوحة. تسمع في صمتها صدى أصواتٍ بعيدة، وتشعر أن البحر القريب لا يزال يهمس بحكايات من عبروا.</p>
+            <p>جدة التاريخية ليست مجرد موقعٍ تراثي، بل روح مدينةٍ لم تنطفئ. هي تذكيرٌ بأن الأماكن لا تُبنى بالحجارة فقط، بل بالناس الذين مرّوا بها… وتركوا فيها جزءًا منهم.</p>
+          </div>
+        </article>
+        <hr class="creative-stories__separator" aria-hidden="true" />
+        <article class="cstory">
+          <h2 class="cstory__title">همس البحر الأحمر</h2>
+          <p class="cstory__author">بقلم: طارق معيض الرفاعي</p>
+          <div class="cstory__divider" aria-hidden="true"></div>
+          <div class="cstory__body">
+            <p>عند حافة اليابسة، حيث ينتهي الطريق ويبدأ الامتداد الأزرق، يقف البحر الأحمر وكأنه كتابٌ مفتوح لا تُقرأ صفحاته بسهولة. مياهه الهادئة تخفي في أعماقها حكاياتٍ لا تُحصى، مرّت بها سفن، وودّعته قوافل، وحلم عند شواطئه عابرون كُثر.</p>
+            <p>لم يكن البحر مجرد مساحة من الماء، بل كان طريقًا للحياة، وجسرًا يصل بين أماكن بعيدة وقلوبٍ متباعدة. على مياهه سارت رحلات التجارة، وعليه حملت الرياح أصوات البحّارة، وهم يواجهون المجهول بثقةٍ لا تُرى، لكنها تُحس.</p>
+            <p>كل موجةٍ ترتطم بالشاطئ، تبدو وكأنها رسالة من زمنٍ بعيد؛ تحكي عن رحلة بدأت ولم تنتهِ، وعن أناسٍ تركوا خلفهم أثرًا لا يُمحى. وفي سكون الليل، حين يهدأ كل شيء، يصبح صوت البحر أشبه بحكاية تُروى بصوتٍ خافت، لا يسمعها إلا من ينصت.</p>
+            <p>حين تقف أمامه، لا ترى ماءً فقط، بل ترى امتدادًا للزمن، ومساحةً تختلط فيها الذكريات بالخيال. وكأن البحر الأحمر لا يزال يحتفظ بكل من مرّ به، في أعماقه، وفي صدى أمواجه.</p>
+            <p>البحر الأحمر ليس مجرد بحر، بل ذاكرةٌ حية، تذكّرنا أن الطرق لا تُقاس بالمسافات، بل بالقصص التي تُولد فيها… وتبقى.</p>
+          </div>
+        </article>
+        <hr class="creative-stories__separator" aria-hidden="true" />        <article class="cstory">
+          <h2 class="cstory__title">مدائنُ الصمت</h2>
+          <p class="cstory__author">بقلم: مازن محمد الأحمدي</p>
+          <div class="cstory__divider" aria-hidden="true"></div>
+          <div class="cstory__body">
+            <p>في شمال غرب المملكة، حيث يمتد الصمت على مدّ البصر، تظهر مدائن صالح كأنها ليست من هذا الزمن. صخورٌ شاهقة، نُحتت بدقة، تقف وكأنها تحرس أسرار من مرّوا من هنا يومًا.</p>
+            <p>لم تكن هذه المدينة يومًا مجرد مساكن، بل كانت حياة كاملة تنبض بين الجبال. هنا، عاش قومٌ تركوا أثرهم في الحجر، وكأنهم كانوا يدركون أن الزمن سيمضي، لكن ما يُنحت بصدقٍ لا يزول.</p>
+            <p>كل واجهةٍ صخرية تحمل ملامح قصة؛ بابٌ يقود إلى عالمٍ اندثر، ونقوشٌ تحكي عن إنسانٍ حاول أن يخلّد وجوده. لا أصوات تُسمع، لكن الصمت هنا ليس فراغًا، بل امتلاءٌ بالحكايات.</p>
+            <p>حين تقف أمام هذه المعالم، لا تشعر أنك تزور مكانًا، بل أنك تُصغي لتاريخٍ حي. تشعر أن الماضي لا يزال حاضرًا، يراقب، ويُذكّر، ويهمس بأن ما يُبنى بعزيمة، يبقى شاهدًا حتى بعد غياب أصحابه.</p>
+            <p>مدائن صالح ليست مجرد موقع أثري، بل تجربة تعيد تعريف علاقتنا بالزمن؛ تجعلك تدرك أن الإنسان قد يرحل، لكن أثره… إن كان صادقًا، يبقى.</p>
+          </div>
+        </article>
+        <hr class="creative-stories__separator" aria-hidden="true" />
+        <article class="cstory">
+          <h2 class="cstory__title">بوابة الحجاز</h2>
+          <p class="cstory__author">بقلم: أحمد غازي بن قاسم</p>
+          <div class="cstory__divider" aria-hidden="true"></div>
+          <div class="cstory__body">
+            <p>على ضفاف البحر الأحمر، تقف جدة التاريخية كشاهدٍ أزليٍّ يرتدي ثوب "الرواشين" العتيقة، حيث تتنفس الجدران المرجانية عبق العابرين، وتهمس الأزقة الضيقة بحكايات جيلٍ نسج من الصبر والودّ ذاكرةً لا يمحوها الزمن.</p>
+            <p>ما إن تطأ قدماك عتبات "البلد" حتى يشعرك المكان بأن الزمن قد قرر أن يتوقف هنا قليلاً ليلتقط أنفاسه الممتدة عبر القرون. في قلب تلك الأزقة، تروي البيوت سيرة أجيالٍ عبرت من "باب مكة" لتغزل من خيوط التجارة قصصاً إنسانيةً خالدة، فليست الحجارة هنا مجرد بناء، بل هي مخزنٌ للأسرار والضحكات التي سكنت الزوايا. وفي "بيت نصيف"، تتكئ الذاكرة على شجرة "النيم" العتيقة التي ظلت حارسةً لاجتماع القلوب قبل العقول، بينما يتردد في "البرحة" صدى نداءات الباعة التي امتزجت بضحكات الأطفال في مشهدٍ حيٍّ لم تفتّ في عضده السنين.</p>
+            <p>لقد كانت جدة على الدوام أكثر من مجرد ميناء لاستقبال المسافرين؛ كانت "المستقر" الدافئ الذي انصهرت فيه ثقافات الشعوب لتشكل هويةً فريدة لا تشبه غيرها. إن كل مسمارٍ دُقّ في خشب "روشان" قديم يحكي قصة نجارٍ أبدع في موازنة الضوء وحجب الشمس ليسمح لنسيم البحر بالمرور، وكل حجرٍ من "المنقبى" يُحدثك عن صمود هذه المدينة وكبريائها أمام الأمواج وتغيرات الدهر. إنها حكاية مدينةٍ كُتبت بملح البحر وعرق الكدح، تفتح ذراعيها دوماً للقادمين، وتهمس في آذانهم بأن الجمال الحقيقي يكمن في تلك التفاصيل الصغيرة التي نخشى عليها من غبار النسيان.</p>
+          </div>
+        </article>
+      </div>
+      <a href="../index.html" class="article-back-btn creative-page__back">العودة إلى الرئيسية</a>
     </div>
   </main>
-
   <footer class="site-footer" id="contact">
     <div class="site-footer__top">
       <div class="wrap" style="display:grid;grid-template-columns:1.4fr 2fr;gap:64px;align-items:start;">
         <div>
           <h3 class="site-footer__name">صحيفة إِرْث الإلكترونية</h3>
           <span class="site-footer__sub" lang="en">ERTH · DIGITAL NEWSPAPER</span>
-          <p class="site-footer__about">منصة صحفية ثقافية رقمية تربط الإنسان بجذوره، وتعيد قراءة التاريخ والآثار والسياحة في المملكة العربية السعودية بأسلوبٌ معاصر.</p>
+          <p class="site-footer__about">منصة صحفية ثقافية رقمية تربط الإنسان بجذوره، وتعيد قراءة التاريخ والآثار والسياحة في المملكة العربية السعودية بأسلوبٍ معاصر.</p>
           <span class="site-footer__motto">«ربط الإنسان بجذوره»</span>
         </div>
         <div class="site-footer__cols">
@@ -172,7 +260,6 @@
       </div>
     </div>
   </footer>
-
   <script src="../script.js" defer></script>
 </body>
 </html>
