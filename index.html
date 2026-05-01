@@ -20,50 +20,49 @@
 <link rel="icon" type="image/svg+xml" href="assets/images/ui/logo-erth.svg" />
 
 <!-- Preload خط ثُمانية الرئيسي (Regular) لتسريع FCP -->
-<link rel="preload" href="assets/fonts/thmanyahsans-Regular.woff2" as="font" type="font/woff2" crossorigin />
-
+<link rel="preload" href="assets/fonts/thmanyahseriftext-Regular.otf" as="font" type="font/otf" crossorigin />
 <style>
   /* ============== خط ثُمانية الرسمي ============== */
   @font-face {
-    font-family: 'Thmanyah Sans';
-    src: url('assets/fonts/thmanyahsans-Light.woff2') format('woff2');
+    font-family: 'Thmanyah Serif';
+    src: url('assets/fonts/thmanyahseriftext-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: 'Thmanyah Sans';
-    src: url('assets/fonts/thmanyahsans-Regular.woff2') format('woff2');
+    font-family: 'Thmanyah Serif';
+    src: url('assets/fonts/thmanyahseriftext-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: 'Thmanyah Sans';
-    src: url('assets/fonts/thmanyahsans-Medium.woff2') format('woff2');
+    font-family: 'Thmanyah Serif';
+    src: url('assets/fonts/thmanyahseriftext-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: 'Thmanyah Sans';
-    src: url('assets/fonts/thmanyahsans-Bold.woff2') format('woff2');
+    font-family: 'Thmanyah Serif';
+    src: url('assets/fonts/thmanyahseriftext-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: 'Thmanyah Sans';
-    src: url('assets/fonts/thmanyahsans-Black.woff2') format('woff2');
+    font-family: 'Thmanyah Serif';
+    src: url('assets/fonts/thmanyahseriftext-Black.otf') format('opentype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
   }
-
-  /* تطبيق الخط على كامل الصفحة بأولوية عليا */
+  /* تطبيق الخط على كامل الصفحة */
   html, body,
   h1, h2, h3, h4, h5, h6,
   p, span, a, li, button, input, textarea, select,
+  blockquote, figcaption, em, strong, i, b,
   .wordmark__name, .hero__title, .rule__title, .ncard__title, .rcard__title,
   .icard__title, .acard__title, .creative__title, .about-card__title,
   .staff-card__name, .policy-card__title, .stat-item__num, .stat-item__label,
@@ -72,10 +71,21 @@
   .hero__pick-title, .hero__dek, .creative__lede, .about-card__text,
   .topbar__tag, .topbar__left, .topbar__right, .badge,
   .ncard__cat, .nrow__cat, .rcard__cat, .rside__index, .acard__author,
-  .byline__name, .byline__time, .ncard__author, .nrow__author, .rside__author {
-    font-family: 'Thmanyah Sans', 'IBM Plex Sans Arabic', 'Tahoma', Arial, sans-serif !important;
+  .byline__name, .byline__time, .ncard__author, .nrow__author, .rside__author,
+  .axis__tag, .axis__num, .axis__label,
+  .article-tag, .article-meta, .article-content, .article-content p,
+  .article-content h2, .article-content h3, .article-content blockquote,
+  .article-sources, .article-sources h2, .article-sources li,
+  .breadcrumb, .article-back-btn,
+  .nav-toggle, .mobile-nav, .mobile-nav__brand, .mobile-nav__list,
+  .primary-nav__list, .primary-nav__list a,
+  .btn, .btn--solid, .btn--ghost, .btn--block, .btn--lg,
+  .hero__pick-num, .hero__pick-cat, .hero__pick-author,
+  .nrow__num, .ncard__corner, .rcard__cta, .icard__cta, .acard__cta,
+  .creative__kicker, .creative__cta, .creative__quote-mark, .creative__signature {
+    font-family: 'Thmanyah Serif', 'Tahoma', Arial, sans-serif !important;
   }
-</style>
+</style>>
 
 <link rel="stylesheet" href="style.css" />
 </head>
