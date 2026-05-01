@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>مدائن صالح: رحلة عبر الزمن في قلب العلا · صحيفة إرث الإلكترونية</title>
   <meta name="description" content="تعتبر مدائن صالح (المعروفة قديماً بمدينة الحِجر) واحدة من أهم الكنوز التاريخية ليس فقط في المملكة العربية السعودية، بل في العالم أجمع." />
+    <link rel="preload" href="../assets/fonts/thmanyahseriftext-Regular.otf" as="font" type="font/otf" crossorigin />
+  <style>
+    @font-face { font-family: 'Thmanyah Serif'; src: url('../assets/fonts/thmanyahseriftext-Light.otf') format('opentype'); font-weight: 300; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Thmanyah Serif'; src: url('../assets/fonts/thmanyahseriftext-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Thmanyah Serif'; src: url('../assets/fonts/thmanyahseriftext-Medium.otf') format('opentype'); font-weight: 500; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Thmanyah Serif'; src: url('../assets/fonts/thmanyahseriftext-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Thmanyah Serif'; src: url('../assets/fonts/thmanyahseriftext-Black.otf') format('opentype'); font-weight: 900; font-style: normal; font-display: swap; }
+    html, body, h1, h2, h3, h4, h5, h6, p, span, a, li, button, blockquote, figcaption, em, strong, i, b, .article-tag, .article-meta, .article-content, .article-content p, .article-content h2, .article-content h3, .article-content blockquote, .article-sources, .article-sources h2, .article-sources li, .breadcrumb, .article-back-btn, .topbar__left, .topbar__right, .wordmark__name, .site-footer__name, .site-footer__motto, .primary-nav__list, .primary-nav__list a, .mobile-nav__brand, .mobile-nav__list, .nav-toggle, .btn, .btn--solid, .btn--ghost, .btn--block, .btn--lg { font-family: 'Thmanyah Serif', 'Tahoma', Arial, sans-serif !important; }
+  </style>
   <link rel="stylesheet" href="../style.css" />
 </head>
 
@@ -26,7 +35,11 @@
 
   <header class="masthead" id="masthead">
     <div class="wrap masthead__inner">
-      <div class="masthead__start"></div>
+      <div class="masthead__start">
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="القائمة" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
 
       <div class="wordmark">
         <a href="../index.html" class="wordmark__logo-link" aria-label="صحيفة إرث الإلكترونية - الرئيسية">
@@ -52,6 +65,11 @@
       </ul>
     </nav>
   </header>
+  <aside class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <div class="mobile-nav__head"><span class="mobile-nav__brand">صحيفة إرث</span><button class="mobile-nav__close" id="mobileNavClose" type="button" aria-label="إغلاق"><span aria-hidden="true">×</span></button></div>
+    <ul class="mobile-nav__list"><li><a href="../index.html">الرئيسية</a></li><li><a href="../index.html#news">الأخبار</a></li><li><a href="../index.html#reports">التقارير</a></li><li><a href="../index.html#invest">التحقيقات</a></li><li><a href="../index.html#articles">المقالات</a></li><li><a href="../index.html#creative">قصص كُتبت لتبقى</a></li><li><a href="../index.html#about">من نحن</a></li><li><a href="../index.html#contact">تواصل معنا</a></li></ul>
+  </aside>
+  <div class="overlay-backdrop" id="overlayBackdrop"></div>
 
   <main class="article-page">
     <div class="wrap">
@@ -114,46 +132,10 @@
   </main>
 
   <footer class="site-footer" id="contact">
-    <div class="site-footer__top">
-      <div class="wrap" style="display:grid;grid-template-columns:1.4fr 2fr;gap:64px;align-items:start;">
-        <div>
-          <h3 class="site-footer__name">صحيفة إرث الإلكترونية</h3>
-          <span class="site-footer__sub">ERTH · DIGITAL NEWSPAPER</span>
-          <p class="site-footer__about">منصة صحفية ثقافية رقمية تهتم بالتاريخ والآثار والسياحة في الهوية العربية السعودية بأسلوب معاصر.</p>
-          <p class="site-footer__motto">«ربط الإنسان بجذوره»</p>
-        </div>
-
-        <div class="site-footer__cols">
-          <div>
-            <strong>الأقسام</strong>
-            <ul style="list-style:none;padding:0;margin-top:12px;">
-              <li><a href="../index.html#news">الأخبار</a></li>
-              <li><a href="../index.html#reports">التقارير</a></li>
-              <li><a href="../index.html#invest">التحقيقات</a></li>
-              <li><a href="../index.html#articles">المقالات</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <strong>تواصل معنا</strong>
-            <ul style="list-style:none;padding:0;margin-top:12px;">
-              <li><a href="mailto:erthdigital@gmail.com">erthdigital@gmail.com</a></li>
-              <li><a href="https://x.com/erthdigital0?s=21" target="_blank" rel="noopener noreferrer">X / تويتر</a></li>
-              <li><a href="https://www.instagram.com/erth_13" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-              <li><a href="https://www.tiktok.com/@erth_13" target="_blank" rel="noopener noreferrer">TikTok</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-footer__bottom">
-      <div class="wrap site-footer__bottom-inner">
-        <span class="site-footer__credit">© ٢٠٢٦ صحيفة إرث الإلكترونية — جميع الحقوق محفوظة</span>
-      </div>
-    </div>
+    <div class="site-footer__top"><div class="wrap" style="display:grid;grid-template-columns:1.4fr 2fr;gap:64px;align-items:start;"><div><h3 class="site-footer__name">صحيفة إِرْث الإلكترونية</h3><span class="site-footer__sub" lang="en">ERTH · DIGITAL NEWSPAPER</span><p class="site-footer__about">منصة صحفية ثقافية رقمية تربط الإنسان بجذوره، وتعيد قراءة التاريخ والآثار والسياحة في المملكة العربية السعودية بأسلوبٌ معاصر.</p><span class="site-footer__motto">«ربط الإنسان بجذوره»</span></div><div class="site-footer__cols"><div><h4>الأقسام</h4><ul><li><a href="../index.html#news">الأخبار</a></li><li><a href="../index.html#reports">التقارير</a></li><li><a href="../index.html#invest">التحقيقات</a></li><li><a href="../index.html#articles">المقالات</a></li><li><a href="../index.html#creative">قصص كُتبت لتبقى</a></li></ul></div><div><h4>الصحيفة</h4><ul><li><a href="../index.html#about">من نحن</a></li><li><a href="../index.html#about">الرؤية والرسالة</a></li><li><a href="../index.html#newsroom">غرفة الأخبار</a></li><li><a href="../index.html#policies">سياسة النشر</a></li><li><a href="../index.html#policies">أخلاقيات العمل</a></li></ul></div><div><h4>تواصل معنا</h4><ul><li><a href="mailto:erthdigital@gmail.com">erthdigital@gmail.com</a></li><li><a href="tel:+966501514110">0501514110</a></li><li><a href="https://x.com/erthdigital0?s=21" target="_blank" rel="noopener noreferrer"><span lang="en">X</span> / تويتر</a></li><li><a href="https://www.instagram.com/erth_13" target="_blank" rel="noopener noreferrer"><span lang="en">Instagram</span></a></li><li><a href="https://www.tiktok.com/@erth_13" target="_blank" rel="noopener noreferrer"><span lang="en">TikTok</span></a></li></ul></div></div></div></div>
+    <div class="site-footer__bottom"><div class="wrap site-footer__bottom-inner"><span>© ٢٠٢٦ صحيفة إرث الإلكترونية — جميع الحقوق محفوظة</span><span class="site-footer__credit">صُمّمت وحُرّرت بعناية</span></div></div>
   </footer>
 
-  <script src="../script.js"></script>
+  <script src="../script.js" defer></script>
 </body>
 </html>
