@@ -1,42 +1,41 @@
 /* ==========================================================
-   Thmanyah Sans - Font Face Declarations
+   Thmanyah Serif - Font Face Declarations
    ========================================================== */
-
 @font-face {
-  font-family: 'Thmanyah Sans';
-  src: url('assets/fonts/thmanyahsans-Light.woff2') format('woff2');
+  font-family: 'Thmanyah Serif';
+  src: url('assets/fonts/thmanyahseriftext-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Thmanyah Sans';
-  src: url('assets/fonts/thmanyahsans-Regular.woff2') format('woff2');
+  font-family: 'Thmanyah Serif';
+  src: url('assets/fonts/thmanyahseriftext-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Thmanyah Sans';
-  src: url('assets/fonts/thmanyahsans-Medium.woff2') format('woff2');
+  font-family: 'Thmanyah Serif';
+  src: url('assets/fonts/thmanyahseriftext-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Thmanyah Sans';
-  src: url('assets/fonts/thmanyahsans-Bold.woff2') format('woff2');
+  font-family: 'Thmanyah Serif';
+  src: url('assets/fonts/thmanyahseriftext-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Thmanyah Sans';
-  src: url('assets/fonts/thmanyahsans-Black.woff2') format('woff2');
+  font-family: 'Thmanyah Serif';
+  src: url('assets/fonts/thmanyahseriftext-Black.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -113,8 +112,8 @@ img[src$=".jpg"]:not([complete]) {
   --terra-soft:#A35B3E;
   --gold:      #C9A86A;
   --cream:     #F4EFDF;
-  --serif: 'Amiri', serif;
-  --sans:  'Thmanyah Sans', Arial, sans-serif;
+  --serif: 'Thmanyah Serif', 'Amiri', Georgia, serif;
+  --sans: 'Thmanyah Serif', 'Tahoma', Arial, sans-serif;
   --wrap: 1280px;
   --shadow-sm: 0 2px 8px rgba(20,20,20,.05);
   --shadow-md: 0 6px 24px rgba(20,20,20,.08);
@@ -164,7 +163,7 @@ ul, ol { padding: 0; margin: 0; list-style: none; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: 'Thmanyah Sans', Arial, sans-serif;
+  font-family: 'Thmanyah Serif', Arial, sans-serif;
   font-weight: 700;
   color: var(--ink);
   line-height: 1.22;
